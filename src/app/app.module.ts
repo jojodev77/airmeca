@@ -11,6 +11,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 /** Modules */
 import { AngularMaterialModule } from './angular-material/angular-material.module';
+import { CoreModule } from './core/core.module';
+import { BodyModule } from './body/body.module';
 
 
 @NgModule({
@@ -22,7 +24,12 @@ import { AngularMaterialModule } from './angular-material/angular-material.modul
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    CoreModule,
+    BodyModule
+  ],
+  exports: [
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
