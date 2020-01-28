@@ -23,13 +23,13 @@ import { BodyModule } from './body/body.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FlexLayoutModule,
     AngularMaterialModule,
     CoreModule,
-    BodyModule
+    BodyModule,
+    FlexLayoutModule
   ],
   exports: [
-    FlexLayoutModule,
+CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
