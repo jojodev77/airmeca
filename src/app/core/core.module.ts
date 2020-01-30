@@ -9,14 +9,15 @@ import { FooterComponent } from './footer/footer.component';
 import { AngularMaterialModule } from '../angular-material/angular-material.module';
 import { BrowserModule } from '@angular/platform-browser';
 
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [HeaderComponent, FooterComponent],
   imports: [
     CommonModule,
     BrowserModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    FlexLayoutModule
   ],
   exports: [
     HeaderComponent,

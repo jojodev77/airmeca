@@ -28,9 +28,6 @@ import { BodyModule } from './body/body.module';
     BodyModule,
     FlexLayoutModule
   ],
-  exports: [
-CoreModule
-  ],
   providers: [],
   bootstrap: [AppComponent]
 })
