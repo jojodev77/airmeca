@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 
 /** modules */
 import { AngularMaterialModule } from '../angular-material/angular-material.module';
+import { BannerComponent } from './banner/banner.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [BannerComponent],
   imports: [
     CommonModule,
     AngularMaterialModule
