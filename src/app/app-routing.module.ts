@@ -11,10 +11,6 @@ const routes: Routes = [
     path: 'client',
     loadChildren: () => import('../app/body/client/client.component').then(mod => mod.ClientComponent)
   },
-  {
-    path: 'qualite',
-    loadChildren: () => import('../app/body/qualite/qualite.component').then(mod => mod.QualiteComponent)
-  },
 ];
 
 @NgModule({
