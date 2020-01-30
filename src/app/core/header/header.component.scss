@@ -1,6 +1,7 @@
 .header{
-    height: 15%;
+    height: 100px;
     background-color: white;
+    position: sticky;
 }
 
 
@@ -18,10 +19,14 @@ h1{
 height: 100px !important;
 }
 
+.conteneur-nav{
+    background-color: whitesmoke;
+}
 
 nav{
     //position: sticky;
     top: 0px;
+    background-color: whitesmoke !important;
 }
 
 nav input[type=checkbox]{
@@ -35,7 +40,6 @@ nav label{
 nav ul{
     display: none;
     list-style-type: none;
-    background-color: #555;
 }
 nav input[type=checkbox]:checked + ul{
     display: flex;
@@ -78,8 +82,8 @@ li{
         border-bottom: 2px solid transparent;
     }
     nav a:hover{
-        color: orange;
-        border-bottom: 2px solid gold;
+        color: red;
+        border-bottom: 2px solid blue;
     }
     .sous{
         display: none;

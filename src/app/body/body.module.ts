@@ -7,18 +7,20 @@ import { AngularMaterialModule } from '../angular-material/angular-material.modu
 /** component */
 import { BannerComponent } from './banner/banner.component';
 import { ClientComponent } from './client/client.component';
+import { QualiteComponent } from './qualite/qualite.component';
 
 
 
 @NgModule({
-  declarations: [BannerComponent, ClientComponent],
+  declarations: [BannerComponent, ClientComponent, QualiteComponent],
   imports: [
     CommonModule,
     AngularMaterialModule
   ],
   exports: [
     ClientComponent,
-    BannerComponent
+    BannerComponent,
+    QualiteComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
