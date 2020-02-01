@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 /** modules */
 import { AngularMaterialModule } from '../angular-material/angular-material.module';
+import { BodyRoutingModule } from './body.routing.module';
 
 /** component */
 import { BannerComponent } from './banner/banner.component';
@@ -11,16 +12,19 @@ import { QualiteComponent } from './qualite/qualite.component';
 
 
 
+
 @NgModule({
   declarations: [BannerComponent, ClientComponent, QualiteComponent],
   imports: [
     CommonModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    BodyRoutingModule
   ],
   exports: [
     ClientComponent,
     BannerComponent,
-    QualiteComponent
+    QualiteComponent,
+    BodyRoutingModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
