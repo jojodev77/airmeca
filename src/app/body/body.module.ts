@@ -9,12 +9,13 @@ import { BodyRoutingModule } from './body.routing.module';
 import { BannerComponent } from './banner/banner.component';
 import { ClientComponent } from './client/client.component';
 import { QualiteComponent } from './qualite/qualite.component';
+import { BodyComponent } from './body.component';
 
 
 
 
 @NgModule({
-  declarations: [BannerComponent, ClientComponent, QualiteComponent],
+  declarations: [BannerComponent, ClientComponent, QualiteComponent, BodyComponent],
   imports: [
     CommonModule,
     AngularMaterialModule,
@@ -24,6 +25,7 @@ import { QualiteComponent } from './qualite/qualite.component';
     ClientComponent,
     BannerComponent,
     QualiteComponent,
+    BodyComponent,
     BodyRoutingModule
   ],
   schemas: [

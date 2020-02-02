@@ -1,18 +1,29 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 
+/** rxjs */
+import { Observable, Subject } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+/* Models */
+import { ModuleParameters } from '../modules.parameters.models';
+
 @Injectable({
   providedIn: 'root'
 })
 export class RoutingService {
 
-  constructor(private router: Router) { }
+  moduleParametersSubject = new Subject<ModuleParameters>();
+  data: ModuleParameters;
 
-  routingToQualite() {
-    this.router.navigate(['/qualite']);
+  constructor() {
+  }
+  addRoutingParametersService(data: ModuleParameters) {
+    this.moduleParametersSubject.next(data);
   }
 
-  routingToClient() {
-    this.router.navigate(['/client']);
+  getRoutingParametersService(): Observable<ModuleParameters> {
+    return this.moduleParametersSubject.asObservable();
   }
+
 }

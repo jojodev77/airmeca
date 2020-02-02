@@ -10,8 +10,8 @@
             <label for="mobile">Afficher / Cacher le menu</label>
             <input type="checkbox" id="mobile" role="button">
                 <ul>
-                    <li><a href="#" (click)="routingToClient()">Secteur activité</a></li>
-                    <li><a href="#">Service qualité</a></li>
+                    <li><a  (click)="routingToClient('client', false)">Secteur activité</a></li>
+                    <li><a  (click)="routingToQualite('qualite', false)">Service qualité</a></li>
                     <li><a href="#">Equipement</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>   
