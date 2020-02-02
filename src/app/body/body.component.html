@@ -1,9 +1,9 @@
 <section >
-  <section fxFlex="80" *ngIf="moduleName !== qualite">
+  <section fxFlex="80" *ngIf="data.moduleName !== 'qualite'">
         <app-qualite></app-qualite>
     </section>
 
-    <section fxFlex="80">
+    <section fxFlex="80" *ngIf="data.moduleName !== 'client'">
         <app-client></app-client>
     </section>
 </section>

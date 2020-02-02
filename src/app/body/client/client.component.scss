@@ -1,0 +1,32 @@
+#menu
+{
+ width: 170px;
+ background-color: #FFFF99; 
+ border: 1px solid #000000;
+}
+ 
+#menu h2
+{
+ color: #0000EE;
+ text-align: center;
+ font-size: 15px;
+}
+
+#menu li
+{
+ list-style-type: none;
+ list-style-position: inside;
+}
+
+#centre
+{
+ height: 50px;
+ width: 50px;
+ margin: auto;
+ border: 1px solid #BBBBBB;
+}
+
+.item
+{
+ position: absolute;
+}
