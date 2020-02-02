@@ -1,6 +1,4 @@
-.client {
-  background-color: cornflowerblue !important;
-}
+
 input {position: absolute; display: none}
 
 * {
@@ -25,9 +23,6 @@ input {position: absolute; display: none}
   margin: 80%;
   border-radius: 70px;
   color: black;
-  -webkit-box-shadow: 21px 15px 5px 0px #A9A9A9;
-  -moz-box-shadow: 21px 15px 5px 0px #A9A9A9;
-  box-shadow: 21px 15px 5px 0px #A9A9A9;
 }
 
 .btn {
@@ -35,19 +30,6 @@ input {position: absolute; display: none}
   height: 150px;
   position: absolute;
   overflow: hidden;
-}
-
-p{
-  position: absolute;
-  color: white;
-  font-size: 18px;
-  font-family: fantasy;
-  padding: 10px;
-  z-index: 800;
-  background-color: black;
-  height: 20px;
-  width: 100px;
-  margin-top: 50px;
 }
 
 span{

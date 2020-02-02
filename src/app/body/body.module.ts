@@ -10,12 +10,13 @@ import { BannerComponent } from './banner/banner.component';
 import { ClientComponent } from './client/client.component';
 import { QualiteComponent } from './qualite/qualite.component';
 import { BodyComponent } from './body.component';
+import { MatiereComponent } from './matiere/matiere.component';
 
 
 
 
 @NgModule({
-  declarations: [BannerComponent, ClientComponent, QualiteComponent, BodyComponent],
+  declarations: [BannerComponent, ClientComponent, QualiteComponent, BodyComponent, MatiereComponent],
   imports: [
     CommonModule,
     AngularMaterialModule,
