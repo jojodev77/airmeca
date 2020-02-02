@@ -1,9 +1,9 @@
-<section >
-  <section fxFlex="80" *ngIf="data.moduleName !== 'qualite'">
+<section  fxLayout="column">
+  <section fxFlex="80" *ngIf="data.moduleName !== 'qualite'" class="module" fxLayoutAlign="start center">
         <app-qualite></app-qualite>
     </section>
 
-    <section fxFlex="80" *ngIf="data.moduleName !== 'client'">
+    <section fxFlex="80" *ngIf="data.moduleName !== 'client'" class="module" fxLayoutAlign="end center">
         <app-client></app-client>
     </section>
 </section>
