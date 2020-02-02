@@ -6,3 +6,13 @@ html, body {
     border: 0.2px solid blue;
  }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: lato;
+    src: url(assets/Vogue.ttf) format("opentype");
+  }
+
+  @font-face {
+    font-family: assassin;
+    src: url(assets/police.TTF) format("opentype");
+  }
