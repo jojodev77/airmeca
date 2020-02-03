@@ -1,0 +1,65 @@
+.qualite{
+width: 400px;
+height: 600px;
+font-family: 'assassin';
+}
+
+img{
+    width: 150px;
+    padding-left: 20px;
+}
+
+.mat-card {
+    transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+    display: block;
+    position: relative;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: #87CEFA;
+}
+
+.mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {
+    box-sizing: border-box;
+    font-family: 'assassin';
+    position: relative;
+    -webkit-user-select: none;
+    font-size: 16px;
+    font-weight: bolder;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+}
+
+.mat-button:hover, .mat-flat-button:hover, .mat-icon-button:hover, .mat-stroked-button:hover {
+    color: red;;
+}
+
+.accordeon{
+    background-color: #87CEFA;
+}
+
+.mat-expansion-panel-header:not([aria-disabled=true]) {
+    cursor: pointer;
+    background-color: #87CEFA;
+}
+
+.mat-expansion-panel {
+    background: #fff;
+    color:white;
+    background-color: #87CEFA;
+}

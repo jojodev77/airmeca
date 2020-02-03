@@ -11,6 +11,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatCardModule,
     MatTabsModule,
     MatDatepickerModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatExpansionModule
   ],
   exports: [
     MatInputModule,
@@ -38,7 +40,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatCardModule,
     MatTabsModule,
     MatDatepickerModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatExpansionModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
