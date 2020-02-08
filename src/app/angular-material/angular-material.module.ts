@@ -13,7 +13,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import {MatTreeModule} from '@angular/material/tree';
 
 @NgModule({
   declarations: [],
@@ -30,7 +30,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatDatepickerModule,
     MatDatepickerModule,
     MatExpansionModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTreeModule
   ],
   exports: [
     MatInputModule,
@@ -44,7 +45,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatDatepickerModule,
     MatDatepickerModule,
     MatExpansionModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTreeModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
