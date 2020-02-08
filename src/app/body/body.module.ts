@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 /** modules */
 import { AngularMaterialModule } from '../angular-material/angular-material.module';
 import { BodyRoutingModule } from './body.routing.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 /** component */
 import { BannerComponent } from './banner/banner.component';
@@ -20,14 +21,16 @@ import { MatiereComponent } from './matiere/matiere.component';
   imports: [
     CommonModule,
     AngularMaterialModule,
-    BodyRoutingModule
+    BodyRoutingModule,
+    FlexLayoutModule
   ],
   exports: [
     ClientComponent,
     BannerComponent,
     QualiteComponent,
     BodyComponent,
-    BodyRoutingModule
+    MatiereComponent,
+    FlexLayoutModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

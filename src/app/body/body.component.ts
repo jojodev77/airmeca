@@ -14,7 +14,7 @@ import { ModuleParameters } from '../core/modules.parameters.models';
   templateUrl: './body.component.html',
   styleUrls: ['./body.component.scss']
 })
-export class BodyComponent implements OnInit, AfterViewChecked,  OnChanges {
+export class BodyComponent implements OnInit {
 
 moduleParametersSubscription: Subscription;
 moduleParameters: any;
@@ -26,20 +26,11 @@ data: ModuleParameters;
   ngOnInit() {
    this.data = {
      moduleName: '',
-     routingVisibility: true
+     routingVisibility: false
    } as ModuleParameters;
   }
 
 
-ngAfterViewChecked() {
-this.moduleParametersSubscription = this.routingService.moduleParametersSubject.asObservable().subscribe(
-    data => this.data = data
-  );
-
-}
-
-ngOnChanges(changes: SimpleChanges) {
-}
 
 
 }

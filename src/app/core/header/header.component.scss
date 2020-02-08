@@ -1,7 +1,7 @@
 .header{
     height: 100px;
-    background-color: white;
     position: sticky;
+    background-color: #87CEFA;
 }
 
 
@@ -76,6 +76,10 @@ mat-icon{
     padding-right: 20px !important;
 }
 
+span:hover{
+    color: red;
+    font-size: 16px;
+}
 
 @media screen and (min-width: 980px){
     .conteneur-nav{

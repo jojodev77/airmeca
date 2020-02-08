@@ -5,14 +5,15 @@
     <section fxLayout="column" >
         <span fxLayout="row"><mat-icon> phone</mat-icon> 01-64-32-04-36</span>
         <span fxLayout="row"><mat-icon>mail</mat-icon><a HREF="mailto:sa.valet@orange.fr">sa.valet@orange.fr</a></span>
+         <span fxLayout="row"><mat-icon> record_voice_over</mat-icon> Formulaire de contact</span>
     </section>
     <section class="conteneur-nav">
         <nav>
             <label for="mobile">Afficher / Cacher le menu</label>
             <input type="checkbox" id="mobile" role="button">
                 <ul>
-                    <li><a  (click)="routingToClient('client', false)">Secteur activité</a></li>
-                    <li><a  (click)="routingToQualite('qualite', false)">Service qualité</a></li>
+                    <li><a [routerLink]="'/client'" [fragment]="'client1'">Secteur activité</a></li>
+                    <li><a  [routerLink]="['/qualite']" [fragment]="'qualite1'">Service qualité</a></li>
                     <li><a href="#">Equipement</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>   

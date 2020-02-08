@@ -1,7 +1,7 @@
 .qualite{
-width: 400px;
 height: 600px;
 font-family: 'assassin';
+padding: 20px;
 }
 
 img{
@@ -15,7 +15,9 @@ img{
     position: relative;
     padding: 16px;
     border-radius: 4px;
-    background-color: #87CEFA;
+    -webkit-box-shadow: 21px 15px 5px 0px #87CEFA;
+-moz-box-shadow: 21px 15px 5px 0px #87CEFA;
+box-shadow: 21px 15px 5px 0px #87CEFA;
 }
 
 .mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {

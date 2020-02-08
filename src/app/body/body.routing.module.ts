@@ -4,12 +4,16 @@ import { Routes, RouterModule } from '@angular/router';
 /** component */
 import { ClientComponent } from './client/client.component';
 import { QualiteComponent } from './qualite/qualite.component';
+import { BannerComponent } from './banner/banner.component';
+import { BodyComponent } from './body.component';
+import { MatiereComponent } from './matiere/matiere.component';
 
 
 const routes: Routes = [
-  { path: '', component: QualiteComponent },
+  { path: '', component: BodyComponent },
   { path: 'client', component: ClientComponent },
   { path: 'qualite', component: QualiteComponent },
+  { path: 'matiere', component: MatiereComponent },
 ];
 
 @NgModule({

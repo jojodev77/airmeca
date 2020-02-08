@@ -13,6 +13,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AngularMaterialModule } from './angular-material/angular-material.module';
 import { CoreModule } from './core/core.module';
 import { BodyModule } from './body/body.module';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { BodyModule } from './body/body.module';
     AngularMaterialModule,
     CoreModule,
     BodyModule,
+    CommonModule,
     FlexLayoutModule
   ],
   schemas: [

@@ -12,6 +12,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatTabsModule,
     MatDatepickerModule,
     MatDatepickerModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatGridListModule
   ],
   exports: [
     MatInputModule,
@@ -41,7 +43,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatTabsModule,
     MatDatepickerModule,
     MatDatepickerModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatGridListModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
