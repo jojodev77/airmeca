@@ -1,10 +1,26 @@
-.client {
-  -webkit-box-shadow: 21px 15px 5px 0px #87CEFA;
-  -moz-box-shadow: 21px 15px 5px 0px #87CEFA;
-  box-shadow: 21px 15px 5px 0px #87CEFA;
+.matiere {
+
   border: 1px solid red;
   margin: 50px;
-  background-color: white;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #3f87a6);
   max-height: 450px;
   overflow: scroll;
+  width: 100%;
+  min-width: 100%;
+}
+
+.accordeon{
+  background-color: #87CEFA;
+}
+
+li {
+  padding: 35px;
+  font-size: 16px;
+  letter-spacing: 0.4em;
+  font-weight: bold;
+}
+
+li:hover{
+  color: red;
+  font-size: 18px;
 }

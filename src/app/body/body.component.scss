@@ -2,10 +2,17 @@ body{
 max-height: 1000px;
 }
 
+.module{
+    padding: 40px;
+    width: 100%;
+    min-width: 100%;
+}
+
 .client{
     border: 1px solid black;
 }
 
-.qualite{
-    margin-top: -100px;
+
+app-client, app-matiere, app-qualite{
+    width: 100%;
 }

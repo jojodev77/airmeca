@@ -1,13 +1,15 @@
 .client {
-  -webkit-box-shadow: 21px 15px 5px 0px #87CEFA;
-  -moz-box-shadow: 21px 15px 5px 0px #87CEFA;
-  box-shadow: 21px 15px 5px 0px #87CEFA;
+
   border: 1px solid red;
   margin: 50px;
-  background-color: white;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #3f87a6);
+}
+
+.accordeon{
+  background-color: #87CEFA;
 }
 
 img{
   padding: 30px;
-  background-color:87CEFA ;
+  background-color:white ;
 }

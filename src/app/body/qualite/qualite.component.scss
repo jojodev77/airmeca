@@ -1,7 +1,8 @@
 .qualite{
-height: 600px;
 font-family: 'assassin';
 padding: 20px;
+margin: 40px;
+background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #3f87a6);
 }
 
 img{
@@ -15,9 +16,7 @@ img{
     position: relative;
     padding: 16px;
     border-radius: 4px;
-    -webkit-box-shadow: 21px 15px 5px 0px #87CEFA;
--moz-box-shadow: 21px 15px 5px 0px #87CEFA;
-box-shadow: 21px 15px 5px 0px #87CEFA;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #3f87a6);
 }
 
 .mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {

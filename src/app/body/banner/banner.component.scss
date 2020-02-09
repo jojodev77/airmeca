@@ -1,11 +1,11 @@
 .banner{
-    padding: 40px;
-    margin-top: -40px;
+   padding: 40px;
+   width: 100%;
+   min-width: 100% !important;
+   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #3f87a6);
 }
 
 img{
     height: 400px;
-    -webkit-box-shadow: 21px 15px 5px 0px #87CEFA;
--moz-box-shadow: 21px 15px 5px 0px #87CEFA;
-box-shadow: 21px 15px 5px 0px #87CEFA;
+    width: 100%;
 }
