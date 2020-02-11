@@ -1,5 +1,9 @@
 body{
-max-height: 1000px;
+border-top: 18px solid transparent;
+border-bottom: 18px solid transparent;
+border-left: 30px solid blue;
+background-color: #3f87a6;
+height: 800px;
 }
 
 .module{
@@ -13,6 +17,15 @@ max-height: 1000px;
 }
 
 
-app-client, app-matiere, app-qualite{
+app-client, app-matiere, app-qualite, app-banner{
     width: 100%;
 }
+
+#qualite1{
+    margin-top: -30px;
+}
+
+.accordeon[_ngcontent-ret-c52] {
+    background-color: #3f87a6 !important;
+    height: 100px !important;
+  }

@@ -1,15 +1,24 @@
 .client {
 
-  border: 1px solid red;
-  margin: 50px;
+  border-radius: round($number: 45);
+  margin-top: 50px;
+  margin-left: 50px;
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #3f87a6);
+  margin-bottom: 25px;
 }
 
 .accordeon{
   background-color: #87CEFA;
+  height: 100px !important;
 }
 
 img{
   padding: 30px;
-  background-color:white ;
 }
+
+.img-titre{
+  width: 200px;
+  height: 200px;
+}
+
+

@@ -1,14 +1,19 @@
 .header{
     height: 100px;
     position: sticky;
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #3f87a6);
+    background: white;
+    border-radius: 10px;
 }
 
-
-img{
+img {
     width: 200px;
-    height: 100px;
+    /* height: 100px; */
     padding: 3px;
+    border-radius: 10px;
+}
+
+.logo{
+    top:0;
 }
 
 h1{
@@ -18,17 +23,15 @@ h1{
 }
 
 .certificationImage{
-height: 100px !important;
+height: 60px !important;
+border-radius: 30%;
 }
 
-.conteneur-nav{
-    background-color: #87CEFA;
-}
+
 
 nav{
     //position: sticky;
     top: 0px;
-    background-color: whitesmoke !important;
 }
 
 nav input[type=checkbox]{
@@ -60,12 +63,12 @@ nav a{
 
 li{
     padding: 10px;
-    font-family: 'assassin';
+    font-family: 'cyril';
     cursor: pointer;
 }
 
 span{
-    font-family: 'assassin';
+    font-family: 'cyril';
     height: 20px;
    padding: 5px;
    cursor: pointer;

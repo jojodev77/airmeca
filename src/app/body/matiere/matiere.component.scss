@@ -1,12 +1,7 @@
 .matiere {
-
-  border: 1px solid red;
+  border-radius: round($number: 45);
   margin: 50px;
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #3f87a6);
-  max-height: 450px;
-  overflow: scroll;
-  width: 100%;
-  min-width: 100%;
 }
 
 .accordeon{
