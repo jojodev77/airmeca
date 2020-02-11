@@ -12,7 +12,7 @@ import { ClientComponent } from './client/client.component';
 import { QualiteComponent } from './qualite/qualite.component';
 import { BodyComponent } from './body.component';
 import { MatiereComponent } from './matiere/matiere.component';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -22,7 +22,8 @@ import { MatiereComponent } from './matiere/matiere.component';
     CommonModule,
     AngularMaterialModule,
     BodyRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgbModule
   ],
   exports: [
     ClientComponent,
@@ -30,7 +31,8 @@ import { MatiereComponent } from './matiere/matiere.component';
     QualiteComponent,
     BodyComponent,
     MatiereComponent,
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgbModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

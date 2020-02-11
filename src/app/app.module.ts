@@ -14,6 +14,7 @@ import { AngularMaterialModule } from './angular-material/angular-material.modul
 import { CoreModule } from './core/core.module';
 import { BodyModule } from './body/body.module';
 import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { CommonModule } from '@angular/common';
     CoreModule,
     BodyModule,
     CommonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgbModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

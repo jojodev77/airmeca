@@ -1,13 +1,12 @@
 .banner{
-   width: 100%;
-   min-width: 100% !important;
-   min-height: 450px;
-   background-color: #3f87a6;
-   border-radius: 20px;
+  width: 100%;
+  min-width: 100% !important;
+  min-height: 550px;
+  background-color: #3f87a6;
+  border-radius: 20px;
   margin-top: 35px;
 }
 
-img{
-    height: 400px;
-    width: 100%;
+.picsum-img-wrapper{
+position: absolute;
 }

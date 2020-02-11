@@ -1,7 +1,8 @@
 .qualite{
     border-radius: round($number: 45);
     margin: 50px;
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #3f87a6);
+    background-color: #3f87a6 !important;
+    font-family: 'cyril';
 }
 
 img{
@@ -15,7 +16,8 @@ img{
     position: relative;
     padding: 16px;
     border-radius: 4px;
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #3f87a6);
+    background-color: #3f87a6 !important;
+    font-family: 'cyril';
 }
 
 .mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {
@@ -50,16 +52,17 @@ img{
 }
 
 .accordeon{
-    background-color: #87CEFA;
+    background-color: #3f87a6 !important;
+    font-family: 'cyril';
 }
 
 .mat-expansion-panel-header:not([aria-disabled=true]) {
     cursor: pointer;
-    background-color: #87CEFA;
+    background-color: #3f87a6 !important;
 }
 
 .mat-expansion-panel {
-    background: #fff;
+    background-color: #3f87a6 !important;
     color:white;
     background-color: #87CEFA;
 }
