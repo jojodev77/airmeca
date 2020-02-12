@@ -11,8 +11,9 @@
             <label for="mobile">Afficher / Cacher le menu</label>
             <input type="checkbox" id="mobile" role="button">
                 <ul>
-                    <li><a [routerLink]="'/client'" [fragment]="'client1'">Secteur activité</a></li>
-                    <li><a  [routerLink]="['/qualite']" [fragment]="'qualite1'">Service qualité</a></li>
+                    <li><a (click)="routingToClient()">Secteur activité</a></li>
+                    <li><a (click)="routingToMatiere()">Matières usinées</a></li>
+                    <li><a (click)="routingToQualite()">Service qualité</a></li>
                     <li><a href="#">Equipement</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>   

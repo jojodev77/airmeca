@@ -10,10 +10,6 @@ import { MatiereComponent } from './matiere/matiere.component';
 
 
 const routes: Routes = [
-  { path: '', component: BodyComponent },
-  { path: 'client', component: ClientComponent },
-  { path: 'qualite', component: QualiteComponent },
-  { path: 'matiere', component: MatiereComponent },
 ];
 
 @NgModule({

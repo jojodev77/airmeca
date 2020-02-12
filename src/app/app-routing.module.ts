@@ -12,10 +12,13 @@ import { BodyComponent } from './body/body.component';
 
 const routes: Routes = [
   {
-     path: '', component: BodyComponent },
-     { path: 'client', component: ClientComponent },
-     { path: 'qualite', component: QualiteComponent },
-     { path: 'matiere', component: MatiereComponent },
+     path: 'body', component: BodyComponent, children: [
+      {path: 'client', component: ClientComponent},
+      {path: 'matiere', component: MatiereComponent},
+      {path: 'qualite', component: QualiteComponent}
+     ]
+    },
+
 ];
 
 

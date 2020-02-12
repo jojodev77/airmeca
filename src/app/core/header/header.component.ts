@@ -30,13 +30,12 @@ export class HeaderComponent implements OnInit, OnDestroy {
         } else if (e.anchor) {
           this.viewportScroller.scrollToAnchor(e.anchor);
         } else {
-          this.viewportScroller.scrollToPosition([0, 0]);
+          this.viewportScroller.scrollToPosition([0, 64]);
         }
       });
     });
   }
   ngOnInit() {
-    this.router$ = this.router.events.subscribe(next => this.onRouteUpdated(next));
   }
 
   ngOnDestroy() {
@@ -45,35 +44,26 @@ export class HeaderComponent implements OnInit, OnDestroy {
     }
   }
 
-  private onRouteUpdated(event: any): void {
-    if (event instanceof NavigationEnd) {
-      this.smoothScrollTop();
-    }
-  }
 
-  private smoothScrollTop(): void {
-    const scrollToTop = window.setInterval(() => {
-      const pos: number = window.pageYOffset;
-      if (pos > 0) {
-          window.scrollTo(0, pos - 20); // how far to scroll on each step
-      } else {
-          window.clearInterval(scrollToTop);
-      }
-    }, 16);
-  }
+routingToClient() {
+  this.router.onSameUrlNavigation = 'reload';
+  this.router.navigate(['body/client'], { fragment: 'client' }).finally(() => {
+      this.router.onSameUrlNavigation = 'ignore'; // Restore config after navigation completes
+  });
+}
 
-routingToClient(moduleName: string, routingVisibility: boolean) {
-  const moduleParameters = {
-    routingVisibility,
-    moduleName
-  } as ModuleParameters;
-  // this.routingService.moduleParametersSubject.next(moduleParameters);
-  // this.routingService.addRoutingParametersService(moduleParameters);
-  this.router.navigate(['/client']);
+routingToMatiere() {
+  this.router.onSameUrlNavigation = 'reload';
+  this.router.navigate(['body/matiere'], { fragment: 'matiere' }).finally(() => {
+      this.router.onSameUrlNavigation = 'ignore'; // Restore config after navigation completes
+  });
 }
 
 routingToQualite() {
-  this.router.navigate(['/qualite'], { fragment: 'qualite' });
+  this.router.onSameUrlNavigation = 'reload';
+  this.router.navigate(['body/qualite'], { fragment: 'qualite' }).finally(() => {
+      this.router.onSameUrlNavigation = 'ignore'; // Restore config after navigation completes
+  });
 }
 
 locationBack() {

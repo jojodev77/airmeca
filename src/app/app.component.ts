@@ -13,6 +13,7 @@ export class AppComponent  {
 
 
   constructor(private loc: Location, private router: Router, private viewportScroller: ViewportScroller) {
+    this.router.navigate(['/body']);
     this.router.events.pipe(filter(e => e instanceof Scroll)).subscribe((e: any) => {
       setTimeout(() => { // <-- FIX HERE, using timeout to get after content load!! <-- <-- <--
         if (e.position) {
