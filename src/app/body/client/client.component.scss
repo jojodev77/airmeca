@@ -1,10 +1,7 @@
 .client {
-  width: 105%;
   border-radius: round($number: 45);
-  margin-top: 50px;
-  margin-left: 50px;
+  margin: 50px;
   background-color: #3f87a6 !important;
-  margin-bottom: 25px;
   font-family: 'cyril';
 }
 
@@ -23,13 +20,20 @@
   color:white;
 }
 
-img{
-  padding: 30px;
-}
 
 .img-titre{
   width: 200px;
   height: 200px;
+}
+
+p{
+  font-family: 'cyril';
+  font-size: 17px;
+  letter-spacing: 0.4vw;
+}
+
+.contenu{
+  background-color: #3f87a6 !important;
 }
 
 

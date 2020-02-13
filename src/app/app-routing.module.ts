@@ -8,6 +8,8 @@ import { QualiteComponent } from './body/qualite/qualite.component';
 import { MatiereComponent } from './body/matiere/matiere.component';
 import { CommonModule } from '@angular/common';
 import { BodyComponent } from './body/body.component';
+import { EquipementComponent } from './body/equipement/equipement.component';
+import { ContactComponent } from './body/contact/contact.component';
 
 
 const routes: Routes = [
@@ -15,7 +17,9 @@ const routes: Routes = [
      path: 'body', component: BodyComponent, children: [
       {path: 'client', component: ClientComponent},
       {path: 'matiere', component: MatiereComponent},
-      {path: 'qualite', component: QualiteComponent}
+      {path: 'qualite', component: QualiteComponent},
+      {path: 'equipement', component: EquipementComponent},
+      {path: 'contact', component: ContactComponent}
      ]
     },
 

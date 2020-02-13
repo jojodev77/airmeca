@@ -1,0 +1,33 @@
+.equipement {
+  border-radius: round($number: 45);
+  margin: 50px;
+  background-color: #3f87a6 !important;
+  font-family: 'cyril';
+  }
+  
+  .accordeon{
+    background-color: #3f87a6 !important;
+    font-family: 'cyril';
+  }
+  
+  .mat-expansion-panel-header:not([aria-disabled=true]) {
+    cursor: pointer;
+    background-color: #3f87a6 !important;
+  }
+  
+  .mat-expansion-panel {
+    background-color: #3f87a6 !important;
+    color:white;
+  }
+  
+  img{
+    padding: 30px;
+  }
+  
+  .img-titre{
+    width: 200px;
+    height: 200px;
+  }
+  
+  
+  

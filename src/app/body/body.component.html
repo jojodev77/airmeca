@@ -1,18 +1,42 @@
 <section fxLayout="column" class="body">
-  <section fxLayout="row" 
+
+<!-- caroussel -->
+  <section 
+    fxLayout="row" 
     fxLayoutAlign="start center"
      fxFlex="100"
      class="module">
       <app-banner></app-banner>
   </section>
+
+
+<!-- client -->
   <section fxLayout="row" fxLayoutAlign="start center" >
-      <app-client id="client" fxFlex="90"></app-client>
+      <app-client id="client" fxFlex="100"></app-client>
   </section>
+
+
+<!-- matiere -->
   <section fxLayout="row"  fxLayoutAlign="start center"
      fxFlex="100">
     <app-matiere id="matiere"></app-matiere>
   </section>
+
+
+<!-- qualite -->
   <section fxLayout="row" fxLayoutAlign="start center" class="qualite" fxFlex="100">
-    <app-qualite id="qualite" id="choose_package"></app-qualite>
+    <app-qualite id="qualite"></app-qualite>
   </section>
+
+<!-- equipement -->
+  <section fxLayout="row" fxLayoutAlign="start center" class="equipement" fxFlex="100">
+    <app-equipement id="equipement"></app-equipement>
+  </section>
+
+  <!-- contact -->
+  <section fxLayout="row" fxLayoutAlign="start center" class="contact" fxFlex="100">
+    <app-contact id="contact"></app-contact>
+  </section>
+
+
 </section>
