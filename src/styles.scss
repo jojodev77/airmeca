@@ -24,7 +24,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
 
 
   .mat-expansion-panel-header:not([aria-disabled=true]) {
-    background-color: #87CEFA;
+    background-color: #3f87a6;
     cursor: pointer;
 }
 
@@ -32,7 +32,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
   display: flex;
   flex-direction: column;
   overflow: visible;
-  background-color: #87CEFA;
+  background-color: #3f87a6;
 }
 
 .mat-accordion .mat-expansion-panel:last-of-type {
@@ -96,4 +96,19 @@ ngb-carousel {
 
 .carousel-indicators{
   z-index: 20;
+}
+
+.mat-expansion-panel-header-title {
+  color: white;
+  letter-spacing: 0.4em;
+  text-align: center;
+  margin-left: 350px;
+}
+
+.mat-expansion-panel-header-title:hover {
+  color: red;
+  letter-spacing: 0.4em;
+  text-align: center;
+  margin-left: 350px;
+  font-size: 20px;
 }

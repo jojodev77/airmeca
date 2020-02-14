@@ -14,3 +14,29 @@
   .information{
     width: 600px !important;
   }
+
+  .h1, h1 {
+    font-size: 2.5rem;
+    font-family: cyril;
+    text-align: center;
+    TEXT-DECORATION: UNDERLINE;
+    padding-bottom: 20px;
+    margin-top: -60px;
+}
+
+.h2, h2 {
+  font-size: 2rem;
+  font-family: cyril;
+  text-align: center;
+  color: white;
+}
+
+.h3, h3 {
+  font-size: 1.75rem;
+  font-family: cyril;
+  text-align: center;
+}
+
+h3:hover{
+  color: red;
+}

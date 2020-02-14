@@ -14,6 +14,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTreeModule} from '@angular/material/tree';
+import {MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
   declarations: [],
@@ -31,7 +32,8 @@ import {MatTreeModule} from '@angular/material/tree';
     MatDatepickerModule,
     MatExpansionModule,
     MatGridListModule,
-    MatTreeModule
+    MatTreeModule,
+    MatRadioModule
   ],
   exports: [
     MatInputModule,
@@ -46,7 +48,8 @@ import {MatTreeModule} from '@angular/material/tree';
     MatDatepickerModule,
     MatExpansionModule,
     MatGridListModule,
-    MatTreeModule
+    MatTreeModule,
+    MatRadioModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

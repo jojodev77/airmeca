@@ -4,33 +4,34 @@
           <mat-expansion-panel-header>
             <mat-panel-title class="accordeon mat-elevation-z8">
               <section fxLayout="row" fxLayoutAlign="space-evenly center" >
-                <span>NOS SECTEURS D'ACTIVITES:</span>
+                <span>NOS EQUIPEMENTS:</span>
              </section>
                 </mat-panel-title>
                   </mat-expansion-panel-header>
-                    <section fxLayout="row" fxLayoutAlign="space-around center">
-                      <section >
-                        <img src="assets/client/aero.jpg" class="mat-elevation-z8">
-                        <p>Aéronautique</p>
-                      </section>
-                      <section>
-                        <img src="assets/client/ferro.png" class="mat-elevation-z8">
-                        <p>Ferroviaire</p>
-                      </section>
-                      <section>
-                      <img src="assets/client/verre.jpg" class="mat-elevation-z8">
-                      <p>Verrerie</p>
-                      </section>
-                    </section>
-                    <section fxLayout="row" fxLayoutAlign="space-around center">
-                      <section>
-                        <img src="assets/client/cable.jpg" class="mat-elevation-z8">
-                          <p>Cablerie</p>
-                      </section>
-                      <section>
-                        <img src="assets/client/medical.jpg" class="mat-elevation-z8">
-                            <p>Médical</p>
-                      </section>
+                   <section fxLayout="row" fxLayoutAlign="space-around center" >
+                      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
+                        [(ngModel)]="typeEquipement">
+                        <mat-radio-button class="example-radio-button" *ngFor="let type of typeEquipement" [value]="type">
+                          {{type}}
+                        </mat-radio-button>
+                    </mat-radio-group>
+                   </section>
+                    <section fxLayout="row" fxLayoutAlign="space-around center"  *ngFor="let e3axes of equipement3Axes">
+                    <mat-card class="mat-elevation-z5">
+                      <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>{{e3axes.name}}</mat-card-title>
+                        <mat-card-subtitle>{{e3axes.marque}}</mat-card-subtitle>
+                      </mat-card-header>
+                     <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">-->
+                      <mat-card-content>
+                      <section fxLayout="column">
+                        <p>Type: {{e3axes.type}}</p>
+                        <p>Capacite: {{e3axes.capacite}}</p>
+                        </section>
+                      </mat-card-content>
+                    </mat-card>
+
                     </section>
               </mat-expansion-panel>
         </mat-accordion>
