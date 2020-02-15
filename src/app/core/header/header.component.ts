@@ -9,8 +9,13 @@ import { Location, ViewportScroller } from '@angular/common';
 import { ModuleParameters } from '../modules.parameters.models';
 
 /** rxjs */
+
+/** rxjs */
 import { filter } from 'rxjs/operators';
 import { Subject, Observable, Subscription } from 'rxjs';
+
+/** services */
+import { PannelService } from 'src/app/config/pannel.service';
 
 @Component({
   selector: 'app-header',
@@ -22,7 +27,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
   routingVisibility: boolean;
   router$: Subscription;
 
-  constructor(private loc: Location, private router: Router, private viewportScroller: ViewportScroller) {
+  constructor(private loc: Location, private router: Router,
+              private viewportScroller: ViewportScroller, private panelService: PannelService) {
   }
   ngOnInit() {
   }
@@ -60,6 +66,7 @@ routingToEquipement() {
   this.router.navigate(['body/equipement'], { fragment: 'equipement' }).finally(() => {
       this.router.onSameUrlNavigation = 'ignore'; // Restore config after navigation completes
   });
+  this.panelService.addMatAccordeon('open');
 }
 
 routingToContact() {
