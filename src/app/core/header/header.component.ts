@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, OnChanges, SimpleChanges } from '@angular/core';
 import { Router, NavigationEnd, Scroll } from '@angular/router';
 
 /** services */
@@ -26,12 +26,17 @@ export class HeaderComponent implements OnInit, OnDestroy {
   moduleName: string;
   routingVisibility: boolean;
   router$: Subscription;
+  open: string;
 
   constructor(private loc: Location, private router: Router,
               private viewportScroller: ViewportScroller, private panelService: PannelService) {
   }
   ngOnInit() {
+    this.panelService.openMatAccordeon().subscribe(
+      data => this.open = data
+    )
   }
+
 
   ngOnDestroy() {
     if (this.router$ != null) {
@@ -67,6 +72,7 @@ routingToEquipement() {
       this.router.onSameUrlNavigation = 'ignore'; // Restore config after navigation completes
   });
   this.panelService.addMatAccordeon('open');
+
 }
 
 routingToContact() {

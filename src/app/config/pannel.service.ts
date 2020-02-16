@@ -8,6 +8,7 @@ import { Subject, Observable } from 'rxjs';
 })
 export class PannelService {
   open$ = new Subject<string>();
+  open: string;
 
   constructor() { }
 

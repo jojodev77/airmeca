@@ -1,26 +1,33 @@
     <section fxLayout="column" class="equipement mat-elevation-z4">
+
      <mat-accordion #myaccordeon="matAccordion">
         <mat-expansion-panel 
         (opened)="panelOpenState = true"
         (closed)="panelOpenState = false">
           <mat-expansion-panel-header>
             <mat-panel-title class="accordeon mat-elevation-z8">
+
               <section fxLayout="row" fxLayoutAlign="space-evenly center" >
                 <span>NOS EQUIPEMENTS:</span>
              </section>
+
                 </mat-panel-title>
                   </mat-expansion-panel-header>
                    <section fxLayout="row" fxLayoutAlign="space-around center" >
                       <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
-                        [(ngModel)]="typeEquipement">
-                        <mat-radio-button class="example-radio-button" *ngFor="let type of typeEquipement" [value]="type">
+                        [(ngModel)]="animationGo">
+                        <mat-radio-button class="example-radio-button" *ngFor="let type of typeEquipement" [value]="type" (change)="radioChange()">
                           {{type}}
                         </mat-radio-button>
                     </mat-radio-group>
                    </section>
-                    <section fxLayout="row" fxLayoutAlign="space-around center"  *ngFor="let e3axes of equipement3Axes">
-                    <mat-card class="mat-elevation-z5">
-                      <mat-card-header>
+
+                   <section fxLayout="row" fxLayoutAlign="space-around center">
+                    <section   *ngFor="let e3axes of equipement3Axes">
+
+
+                    <mat-card class="mat-elevation-z5" >
+                      <mat-card-header [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
                         <div mat-card-avatar class="example-header-image"></div>
                         <mat-card-title>{{e3axes.name}}</mat-card-title>
                         <mat-card-subtitle>{{e3axes.marque}}</mat-card-subtitle>
@@ -34,6 +41,7 @@
                       </mat-card-content>
                     </mat-card>
 
+                    </section>
                     </section>
               </mat-expansion-panel>
         </mat-accordion>
