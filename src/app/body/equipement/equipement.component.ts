@@ -3,6 +3,7 @@ import { Component, OnInit, ViewChild, OnChanges, SimpleChanges, AfterViewChecke
 /** models */
 import { Equipement } from './model/equipement.model';
 import { Equipements3axes } from './data/3axes.data';
+import { Equipements4axes } from './data/4axes.data';
 
 /** am */
 import { MatAccordion } from '@angular/material/expansion';
@@ -10,6 +11,7 @@ import { MatAccordion } from '@angular/material/expansion';
 /** services */
 import { PannelService } from 'src/app/config/pannel.service';
 import { trigger, state, transition, style, animate } from '@angular/animations';
+
 
 /** rxjs */
 
@@ -55,16 +57,20 @@ export class EquipementComponent implements OnInit, OnChanges {
 
   //equipement
 
-  typeEquipement: string[] = ['3 axes', '4 axes', '5 axes', 'Logiciel'];
+  typeEquipement: string[] = ['3-axes', '4-axes', '5-axes', 'Logiciel'];
   equipement3Axes: Equipement[];
+  equipement4Axes: Equipement[];
+  equipement5Axes: Equipement[];
   animationGo: string;
   selected: string;
   filter: any;
-
+  listEquipement: Equipement[];
   constructor(private panelService: PannelService) { }
 
   ngOnInit() {
     this.equipement3Axes = Equipements3axes;
+    this.equipement4Axes = Equipements4axes;
+    this.listEquipement = this.equipement3Axes
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -91,9 +97,22 @@ export class EquipementComponent implements OnInit, OnChanges {
     this.isOpen = !this.isOpen;
   }
 
-  radioChange() {
-    this.filter = this.animationGo;
-    if (this.filter !== null || !undefined ) {
+  radioChange(item) {
+    switch (item) {
+      case '3-axes':
+        this.listEquipement = this.equipement3Axes
+        break;
+      case '4-axes':
+        this.listEquipement = this.equipement4Axes
+        break;
+      case '5-axes':
+        this.listEquipement = this.equipement5Axes
+        break;
+    
+      default:
+        break;
+    }
+    if (item !== null || !undefined ) {
       this.toggle();
     }
 }

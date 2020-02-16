@@ -16,14 +16,16 @@
                    <section fxLayout="row" fxLayoutAlign="space-around center" >
                       <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
                         [(ngModel)]="animationGo">
-                        <mat-radio-button class="example-radio-button" *ngFor="let type of typeEquipement" [value]="type" (change)="radioChange()">
+                        <mat-radio-button class="example-radio-button" *ngFor="let type of typeEquipement" [value]="type" (change)="radioChange(type)">
                           {{type}}
                         </mat-radio-button>
                     </mat-radio-group>
                    </section>
 
+                   {{animationGo}}
+
                    <section fxLayout="row" fxLayoutAlign="space-around center">
-                    <section   *ngFor="let e3axes of equipement3Axes">
+                    <section   *ngFor="let e3axes of listEquipement">
 
 
                     <mat-card class="mat-elevation-z5" >

@@ -15,6 +15,7 @@ import { CoreModule } from './core/core.module';
 import { BodyModule } from './body/body.module';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CoreModule,
     BodyModule,
     CommonModule,
+    FormsModule,
     FlexLayoutModule,
     NgbModule
   ],
