@@ -33,6 +33,9 @@
     border-radius: 10px;
     padding: 35px !important;
     margin: 25px;
+    -webkit-animation: masuperanimation 6s; /* Safari, Opera, Chrome */
+    animation: masuperanimation 6s; /* Tous les autres navigateurs */
+    margin-left: -150px;
   }
   
   :host {
@@ -47,5 +50,33 @@
     font-weight: bold;
     font-size: 20px;
   }
+
+  @-webkit-keyframes masuperanimation { /* Safari, Opera, Chrome */
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(150px);
+    }
+
+    100% {
+        transform: translateX(150px) rotate(30deg);
+    }
+}
+
+@keyframes masuperanimation { /* Tous les autres navigateurs */
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(150px);
+    }
+
+    100% {
+        transform: translateX(200px);
+    }
+}
   
   
