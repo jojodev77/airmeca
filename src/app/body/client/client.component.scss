@@ -40,6 +40,11 @@ img{
   border-radius: 10px;
 }
 
+img:hover{
+  transform: scale(1.3);
+}
+
+
 .contenu{
   background-color: #3f87a6 !important;
 }

@@ -36,7 +36,7 @@ img:hover{
 
 .mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {
     box-sizing: border-box;
-    font-family: 'assassin';
+    font-family: 'cyril';
     position: relative;
     -webkit-user-select: none;
     font-size: 16px;
@@ -59,6 +59,7 @@ img:hover{
     padding: 0 16px;
     border-radius: 4px;
     overflow: visible;
+    text-decoration: underline;
 }
 
 .mat-button:hover, .mat-flat-button:hover, .mat-icon-button:hover, .mat-stroked-button:hover {
@@ -87,4 +88,9 @@ img:hover{
     font-family: cyril !important;
     margin-right: -8px;
     padding: 8px 0;
+}
+
+p{
+    font-family: 'cyril';
+    color: white;
 }

@@ -26,9 +26,11 @@ li {
   font-size: 16px;
   letter-spacing: 0.4em;
   font-weight: bold;
+  font-family: 'cyril';
+  color: black;
 }
 
 li:hover{
-  color: red;
+  color: black;
   font-size: 18px;
 }

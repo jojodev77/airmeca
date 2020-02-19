@@ -106,9 +106,38 @@ ngb-carousel {
 }
 
 .mat-expansion-panel-header-title:hover {
-  color: red;
+  color: black;
   letter-spacing: 0.4em;
   text-align: center;
   margin-left: 350px;
   font-size: 20px;
+  font-family: 'cyril';
+}
+
+
+.mat-expansion-indicator::after {
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    vertical-align: middle;
+    color: white;
+    height: 1px;
+    font-size: 25px;
+}
+
+.mat-expansion-indicator::after:hover {
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  content: '';
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  vertical-align: middle;
+  color: white;
+  height: 1px;
+  font-size: 25px;
+  color: red;
 }
