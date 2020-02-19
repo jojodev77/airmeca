@@ -15,6 +15,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [],
@@ -33,7 +34,9 @@ import {MatRadioModule} from '@angular/material/radio';
     MatExpansionModule,
     MatGridListModule,
     MatTreeModule,
-    MatRadioModule
+    MatRadioModule,
+    MatTooltipModule
+    
   ],
   exports: [
     MatInputModule,
@@ -49,7 +52,8 @@ import {MatRadioModule} from '@angular/material/radio';
     MatExpansionModule,
     MatGridListModule,
     MatTreeModule,
-    MatRadioModule
+    MatRadioModule,
+    MatTooltipModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

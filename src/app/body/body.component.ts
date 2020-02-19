@@ -30,7 +30,10 @@ data: ModuleParameters;
    } as ModuleParameters;
   }
 
+  topSroll() {
+    window.scrollTo(0,0);
 
+  }
 
 
 }

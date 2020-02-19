@@ -27,6 +27,7 @@
   <section fxLayout="row" fxLayoutAlign="start center" class="qualite" fxFlex="100">
     <app-qualite id="qualite"></app-qualite>
   </section>
+  
 
 <!-- equipement -->
   <section fxLayout="row" fxLayoutAlign="start center" class="equipement" fxFlex="100">
@@ -36,7 +37,26 @@
   <!-- contact -->
   <section fxLayout="row" fxLayoutAlign="start center" class="contact" fxFlex="100">
     <app-contact id="contact"></app-contact>
-  </section>
 
+  </section>
+  <section fxLayout="row" fxLayoutAlign="space-between center"   class="topScroll">
+    <section fxLayout="row" fxLayoutAlign="start center">
+     <mat-icon 
+        (click)="topSroll()"  
+        class="topScrollL" mat-raised-button
+        matTooltip="Remonter en haut"
+        matTooltipClass="example-tooltip-red"
+        aria-label="Button that shows a red tooltip"
+        class="example-button"> present_to_all</mat-icon>
+    </section>
+    <section fxLayout="row" fxLayoutAlign="end center">
+    <mat-icon 
+      (click)="topSroll()"
+      matTooltip="Remonter en haut"
+      matTooltipClass="example-tooltip-red"
+      aria-label="Button that shows a red tooltip"
+       class="topScrollR"> present_to_all</mat-icon>
+    </section>
+  </section>
 
 </section>

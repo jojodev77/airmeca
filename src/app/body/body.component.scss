@@ -29,3 +29,23 @@ app-client, app-matiere, app-qualite, app-banner, app-equipement{
     background-color: #3f87a6 !important;
     height: 100px !important;
   }
+
+  .topScrollL{
+    cursor: pointer;
+    height: 30px;
+    font-size: 30px;
+  }
+
+  .topScrollR{
+    cursor: pointer;
+    height: 30px;
+    font-size: 30px;
+}
+
+.topScroll{
+    width: 100%;
+}
+
+.example-tooltip-red {
+    background: #b71c1c;
+  }
