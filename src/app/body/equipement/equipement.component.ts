@@ -51,6 +51,7 @@ export class EquipementComponent implements OnInit, OnChanges {
   @ViewChild('myaccordeon')myPanels: MatAccordion;
   panelOpenState = false;
   open: string = null;
+    searchText;
 
   //animation
   isOpen = true;

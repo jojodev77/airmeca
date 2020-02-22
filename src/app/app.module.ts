@@ -16,6 +16,7 @@ import { BodyModule } from './body/body.module';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { FilterPipe } from './config/filter.pipe';
 
 
 @NgModule({
@@ -33,6 +34,9 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     FlexLayoutModule,
     NgbModule
+  ],
+  exports: [
+    FormsModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

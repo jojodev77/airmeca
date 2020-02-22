@@ -9,20 +9,13 @@
             </section>
             </mat-panel-title>
               </mat-expansion-panel-header>
-              <ol>
-                <li>INOX</li>
-                <li>INOX AERONAUTIQUE</li>
-                <li>ACIER</li>
-                <li>ALUMINIUM</li>
-                <li>ALUMINIUM</li>
-                <li>LAITON</li>
-                <li>CUIVRE</li>
-                <li>COMPOSITE</li>
-                <li>PLASTIQUE</li>
-                <li>TITANE</li>
-                <li>ALLOY</li>
-                <li>INCONEL</li>
-              </ol>
+               <input [ngModel]="searchText" name="searchText"
+               (ngModelChange)="setUppercaseName($event)" placeHolder="Rechercher">
+
+              <ul *ngFor="let item of matiereArray | filter : searchText">
+                <li>{{item}}</li>
+               
+              </ul>
               </mat-expansion-panel>
           </mat-accordion>
           </section>

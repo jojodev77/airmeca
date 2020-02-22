@@ -17,17 +17,22 @@ import { EquipementComponent } from './equipement/equipement.component';
 import { ContactComponent } from './contact/contact.component';
 import { MapComponent } from './map/map.component';
 
+/** pipe */
+import { FilterPipe } from '../config/filter.pipe';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
   declarations: [BannerComponent, ClientComponent, QualiteComponent, BodyComponent,
-     MatiereComponent, EquipementComponent, ContactComponent, MapComponent],
+     MatiereComponent, EquipementComponent, ContactComponent, MapComponent, FilterPipe],
   imports: [
     CommonModule,
     AngularMaterialModule,
     BodyRoutingModule,
     FlexLayoutModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   exports: [
     ClientComponent,
@@ -39,7 +44,9 @@ import { MapComponent } from './map/map.component';
     MatiereComponent,
     MapComponent,
     FlexLayoutModule,
-    NgbModule
+    FilterPipe,
+    NgbModule,
+
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,

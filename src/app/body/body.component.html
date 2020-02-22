@@ -26,6 +26,28 @@
 <!-- qualite -->
   <section fxLayout="row" fxLayoutAlign="start center" class="qualite" fxFlex="100">
     <app-qualite id="qualite"></app-qualite>
+    <section fxLayout="column">
+      <section>
+        <mat-icon 
+            (click)="topSroll()"  
+            class="topScrollL" mat-raised-button
+            matTooltip="Haut de page"
+            matTooltipClass="example-tooltip-red"
+            aria-label="Button that shows a red tooltip"
+            class="example-button"> vertical_align_top
+          </mat-icon>
+      </section>
+      <section>
+        <mat-icon 
+            (click)="bottomSroll()"  
+            class="topScrollL" mat-raised-button
+            matTooltip="Haut de page"
+            matTooltipClass="example-tooltip-red"
+            aria-label="Button that shows a red tooltip"
+            class="example-button"> vertical_align_bottom
+          </mat-icon>
+      </section>
+    </section>
   </section>
   
 
@@ -44,18 +66,19 @@
      <mat-icon 
         (click)="topSroll()"  
         class="topScrollL" mat-raised-button
-        matTooltip="Remonter en haut"
+        matTooltip="Haut de page"
         matTooltipClass="example-tooltip-red"
         aria-label="Button that shows a red tooltip"
-        class="example-button"> present_to_all</mat-icon>
+        class="example-button"> vertical_align_top
+        </mat-icon>
     </section>
     <section fxLayout="row" fxLayoutAlign="end center">
     <mat-icon 
       (click)="topSroll()"
-      matTooltip="Remonter en haut"
+      matTooltip="Haut de page"
       matTooltipClass="example-tooltip-red"
       aria-label="Button that shows a red tooltip"
-       class="topScrollR"> present_to_all</mat-icon>
+       class="topScrollR"> vertical_align_top</mat-icon>
     </section>
   </section>
 
