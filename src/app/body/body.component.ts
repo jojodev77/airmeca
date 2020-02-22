@@ -36,7 +36,7 @@ data: ModuleParameters;
   }
 
   bottomSroll() {
-    window.scrollTo(0, 1000);
+    window.scrollTo(0, 1200);
 
   }
 

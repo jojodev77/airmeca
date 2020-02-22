@@ -13,6 +13,28 @@
 <!-- client -->
   <section fxLayout="row" fxLayoutAlign="start center" >
       <app-client id="client" fxFlex="100"></app-client>
+      <section fxLayout="column">
+      <section>
+        <mat-icon 
+            (click)="topSroll()"  
+            class="topScrollL" mat-raised-button
+            matTooltip="Haut de page"
+            matTooltipClass="example-tooltip-red"
+            aria-label="Button that shows a red tooltip"
+            class="example-button"> vertical_align_top
+          </mat-icon>
+      </section>
+      <section>
+        <mat-icon 
+            (click)="bottomSroll()"  
+            class="topScrollL" mat-raised-button
+            matTooltip="Bas de page"
+            matTooltipClass="example-tooltip-red"
+            aria-label="Button that shows a red tooltip"
+            class="example-button"> vertical_align_bottom
+          </mat-icon>
+      </section>
+    </section>
   </section>
 
 
@@ -41,7 +63,7 @@
         <mat-icon 
             (click)="bottomSroll()"  
             class="topScrollL" mat-raised-button
-            matTooltip="Haut de page"
+            matTooltip="Bas de page"
             matTooltipClass="example-tooltip-red"
             aria-label="Button that shows a red tooltip"
             class="example-button"> vertical_align_bottom

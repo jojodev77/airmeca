@@ -12,7 +12,7 @@ export class MatiereComponent implements OnInit, OnChanges {
     'INOX',
     'INOX AERONAUTIQUE',
     'ACIER',
-    ' ALUMIIUM',
+    'ALUMINIUM',
     'LAITON',
     'CUIVRE',
     'COMPOSTE',
