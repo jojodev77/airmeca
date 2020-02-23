@@ -25,35 +25,40 @@
                     <section class="example-section">
                       <mat-slide-toggle
                           class="example-margin"
-                          [checked]="checked">
+                          [checked]="checked"
+                          (change)="manageEquipementVisibility($event, 'cu4')">
                         Centre usinage 4 axes
                       </mat-slide-toggle>
                     </section>
                     <section class="example-section">
                       <mat-slide-toggle
                           class="example-margin"
-                          [checked]="checked">
+                           [checked]="checked"
+                          (change)="manageEquipementVisibility($event, 'cu5')">
                         Centre usinage 5 axes
                       </mat-slide-toggle>
                     </section>
                     <section class="example-section">
                       <mat-slide-toggle
                           class="example-margin"
-                          [checked]="checked">
+                           [checked]="checked"
+                          (change)="manageEquipementVisibility($event, 'tn')">
                           Tours numérique
                       </mat-slide-toggle>
                     </section>
                     <section class="example-section">
                       <mat-slide-toggle
                           class="example-margin"
-                          [checked]="checked">
+                          [checked]="checked"
+                          (change)="manageEquipementVisibility($event, 'tm')">
                           Tours manuel
                       </mat-slide-toggle>
                     </section>
                     <section class="example-section">
                       <mat-slide-toggle
                           class="example-margin"
-                          [checked]="checked">
+                          [checked]="checked"
+                          (change)="manageEquipementVisibility($event, 'ms')">
                          Machine spéciale
                       </mat-slide-toggle>
                     </section>
@@ -104,6 +109,37 @@
                       </mat-card>
                       </section>
                       </section>
+
+
+    <!-- centre usinage 5 axes-->
+                      <section fxLayout="row" fxLayoutAlign="space-around center" *ngIf="visibilityCu5">
+                      <section   *ngFor="let e3axes of equipement5Axes">
+              
+                      <mat-card class="mat-elevation-z5" >
+                        <mat-card-header  class="open-close-container">
+                          <div mat-card-avatar class="example-header-image"></div>
+                          <mat-card-title>{{e3axes.name}}</mat-card-title>
+                          <mat-card-subtitle>{{e3axes.type}}</mat-card-subtitle>
+                        </mat-card-header>
+                      <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">-->
+                        <mat-card-content>
+                        <section fxLayout="column">
+                           <p>Caratéristiques: </p>
+                          <p>{{e3axes.capacite}}</p>
+                          </section>
+                        </mat-card-content>
+                      </mat-card>
+                      </section>
+                      </section>
+
+
+
+
+
+
+
+
+
                     </section>
               </mat-expansion-panel>
         </mat-accordion>

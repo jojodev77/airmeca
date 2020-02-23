@@ -11,6 +11,7 @@ import { MatAccordion } from '@angular/material/expansion';
 /** services */
 import { PannelService } from 'src/app/config/pannel.service';
 import { trigger, state, transition, style, animate } from '@angular/animations';
+import { Equipements5axes } from './data/5axes.data';
 
 
 /** rxjs */
@@ -31,8 +32,8 @@ export class EquipementComponent implements OnInit, OnChanges {
   visibilityCu3 = true;
   visibilityCu4 = true;
   visibilityCu5 = true;
-  visibilityCn = true;
-  visibilityCM = true;
+  visibilityTn = true;
+  visibilityTm = true;
   visibilityMs = true;
   
   equipement3Axes: Equipement[];
@@ -43,6 +44,7 @@ export class EquipementComponent implements OnInit, OnChanges {
   ngOnInit() {
     this.equipement3Axes = Equipements3axes;
     this.equipement4Axes = Equipements4axes;
+    this.equipement5Axes = Equipements5axes;
 
   }
 
@@ -73,6 +75,18 @@ if (value.checked === false && type === 'cu5') {
 }
 if (value.checked === true && type === 'cu5') {
 this.visibilityCu5 = true;
+}
+if (value.checked === false && type === 'tn') {
+  this.visibilityTn = false;
+}
+if (value.checked === true && type === 'tn') {
+this.visibilityTn = true;
+}
+if (value.checked === false && type === 'tm') {
+  this.visibilityTm = false;
+}
+if (value.checked === true && type === 'tm') {
+this.visibilityTm = true;
 }
 }
 

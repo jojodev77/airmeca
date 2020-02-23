@@ -1,12 +1,22 @@
 export const Equipements3axes = [
 {
-name:  'Seiki',
-type: ' Tour Numérique',
-capacite: 'l(125)mn * L(110)mn * p(120)mn'
+name:  'MAZAK H400 Palettisé',
+type: ' Centre usinage 3 axe',
+capacite: '4000 mm* 700 mm* 760mm'
 },
 {
-name:  'mozo',
-type: 'Tour Manuel',
-capacite: 'l(75)mn * L(110)mn * p(250)mn'
-}
+    name:  'MAZAK VTC-300',
+    type: ' Centre usinage 3 axe',
+    capacite: '1800 mm* 760 mm* 700mm'
+    },
+    {
+        name:  'MAZAK VQC 15/40',
+        type: ' Centre usinage 3 axe',
+        capacite: '560 mm* 310 mm* 480mm'
+        },
+        {
+            name:  'BROTHER TC22A',
+            type: ' Centre usinage 3 axe',
+            capacite: '500 mm* 400 mm* 400mm'
+            },
 ];
