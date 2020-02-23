@@ -36,7 +36,16 @@
     -webkit-animation: masuperanimation 6s; /* Safari, Opera, Chrome */
     animation: masuperanimation 6s; /* Tous les autres navigateurs */
     margin-left: -150px;
+    background-color: #E6E6E6;
+    font-family: 'cyril';
   }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: black;
+    font-family: 'cyril';
+}
   
   :host {
     display: block;

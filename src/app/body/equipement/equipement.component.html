@@ -14,38 +14,96 @@
                 </mat-panel-title>
                   </mat-expansion-panel-header>
                    <section fxLayout="row" fxLayoutAlign="space-around center" >
-                      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
-                        [(ngModel)]="animationGo">
-                        <mat-radio-button class="example-radio-button" *ngFor="let type of typeEquipement" [value]="type" (change)="radioChange(type)">
-                          {{type}}
-                        </mat-radio-button>
-                    </mat-radio-group>
-                    <div class="md-form">
-                     
-                    </div>
-                   </section>
-
-                   {{animationGo}}
-                   <section fxLayout="row" fxLayoutAlign="space-around center">
-                    <section   *ngFor="let e3axes of listEquipement">
-
-
-                    <mat-card class="mat-elevation-z5" >
-                      <mat-card-header [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
-                        <div mat-card-avatar class="example-header-image"></div>
-                        <mat-card-title>{{e3axes.name}}</mat-card-title>
-                        <mat-card-subtitle>{{e3axes.marque}}</mat-card-subtitle>
-                      </mat-card-header>
-                     <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">-->
-                      <mat-card-content>
-                      <section fxLayout="column">
-                        <p>Type: {{e3axes.type}}</p>
-                        <p>Capacite: {{e3axes.capacite}}</p>
-                        </section>
-                      </mat-card-content>
-                    </mat-card>
-
+                   <section class="example-section">
+                      <mat-slide-toggle
+                          class="example-margin"
+                          [checked]="checked"
+                          (change)="manageEquipementVisibility($event, 'cu3')">
+                        Centre usinage 3 axes
+                      </mat-slide-toggle>
                     </section>
+                    <section class="example-section">
+                      <mat-slide-toggle
+                          class="example-margin"
+                          [checked]="checked">
+                        Centre usinage 4 axes
+                      </mat-slide-toggle>
+                    </section>
+                    <section class="example-section">
+                      <mat-slide-toggle
+                          class="example-margin"
+                          [checked]="checked">
+                        Centre usinage 5 axes
+                      </mat-slide-toggle>
+                    </section>
+                    <section class="example-section">
+                      <mat-slide-toggle
+                          class="example-margin"
+                          [checked]="checked">
+                          Tours numérique
+                      </mat-slide-toggle>
+                    </section>
+                    <section class="example-section">
+                      <mat-slide-toggle
+                          class="example-margin"
+                          [checked]="checked">
+                          Tours manuel
+                      </mat-slide-toggle>
+                    </section>
+                    <section class="example-section">
+                      <mat-slide-toggle
+                          class="example-margin"
+                          [checked]="checked">
+                         Machine spéciale
+                      </mat-slide-toggle>
+                    </section>
+                   
+                   </section>
+                   <section fxLayout="column">
+
+
+        <!-- centre usinage 3 axes-->
+                    <section fxLayout="row" fxLayoutAlign="space-around center" *ngIf="visibilityCu3">
+                      <section   *ngFor="let e3axes of equipement3Axes">
+
+                      <mat-card class="mat-elevation-z5" >
+                        <mat-card-header class="open-close-container">
+                          <div mat-card-avatar class="example-header-image"></div>
+                          <mat-card-title>{{e3axes.name}}</mat-card-title>
+                          <mat-card-subtitle>{{e3axes.type}}</mat-card-subtitle>
+                        </mat-card-header>
+                      <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">-->
+                        <mat-card-content>
+                        <section fxLayout="column">
+                          <p>Caratéristiques: </p>
+                          <p>{{e3axes.capacite}}</p>
+                          </section>
+                        </mat-card-content>
+                      </mat-card>
+                      </section>
+                      </section>
+
+
+    <!-- centre usinage 4 axes-->
+                      <section fxLayout="row" fxLayoutAlign="space-around center" *ngIf="visibilityCu4">
+                      <section   *ngFor="let e3axes of equipement4Axes">
+              
+                      <mat-card class="mat-elevation-z5" >
+                        <mat-card-header  class="open-close-container">
+                          <div mat-card-avatar class="example-header-image"></div>
+                          <mat-card-title>{{e3axes.name}}</mat-card-title>
+                          <mat-card-subtitle>{{e3axes.type}}</mat-card-subtitle>
+                        </mat-card-header>
+                      <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">-->
+                        <mat-card-content>
+                        <section fxLayout="column">
+                           <p>Caratéristiques: </p>
+                          <p>{{e3axes.capacite}}</p>
+                          </section>
+                        </mat-card-content>
+                      </mat-card>
+                      </section>
+                      </section>
                     </section>
               </mat-expansion-panel>
         </mat-accordion>

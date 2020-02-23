@@ -18,32 +18,6 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
 
 @Component({
   selector: 'app-equipement',
-  animations: [
-    trigger('openClose', [
-      // ...
-      state('open', style({
-        height: '200px',
-        opacity: 1,
-        backgroundColor: 'yellow',
-      })),
-      state('closed', style({
-        height: '100px',
-        opacity: 0.5,
-        backgroundColor: 'green'
-      })),
-      transition('open => closed', [
-        animate('1s')
-      ]),
-      transition ('* => open', [
-        animate ('1s',
-          style ({ opacity: '*' }),
-        ),
-      ]),
-      transition('* => *', [
-        animate('1s')
-      ]),
-    ]),
-  ],
   templateUrl: './equipement.component.html',
   styleUrls: ['./equipement.component.scss']
 })
@@ -51,71 +25,55 @@ export class EquipementComponent implements OnInit, OnChanges {
   @ViewChild('myaccordeon')myPanels: MatAccordion;
   panelOpenState = false;
   open: string = null;
-    searchText;
-
-  //animation
-  isOpen = true;
-
-  //equipement
-
-  typeEquipement: string[] = ['3-axes', '4-axes', '5-axes', 'Logiciel'];
+  searchText;
+  checked = true;
+  type: string;
+  visibilityCu3 = true;
+  visibilityCu4 = true;
+  visibilityCu5 = true;
+  visibilityCn = true;
+  visibilityCM = true;
+  visibilityMs = true;
+  
   equipement3Axes: Equipement[];
   equipement4Axes: Equipement[];
   equipement5Axes: Equipement[];
-  animationGo: string;
-  selected: string;
-  filter: any;
-  listEquipement: Equipement[];
   constructor(private panelService: PannelService) { }
 
   ngOnInit() {
     this.equipement3Axes = Equipements3axes;
     this.equipement4Axes = Equipements4axes;
-    this.listEquipement = this.equipement3Axes
+
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    console.log(changes.animationGo.currentValue);
-    if(changes.animationGo.isFirstChange) {
-      this.toggle();
-    }
+   
   }
 
   openAll() {
     this.myPanels.openAll();
   }
 
-
-
-  toggle() {
-    this.isOpen = !this.isOpen;
-
-
-  
+  manageEquipementVisibility(value, type) {
+     console.log(type, value.checked)
+    if (value.checked === false && type === 'cu3') {
+      this.visibilityCu3 = false;
   }
-
-  antiToggle() {
-    this.isOpen = !this.isOpen;
-  }
-
-  radioChange(item) {
-    switch (item) {
-      case '3-axes':
-        this.listEquipement = this.equipement3Axes
-        break;
-      case '4-axes':
-        this.listEquipement = this.equipement4Axes
-        break;
-      case '5-axes':
-        this.listEquipement = this.equipement5Axes
-        break;
-    
-      default:
-        break;
-    }
-    if (item !== null || !undefined ) {
-      this.toggle();
-    }
+  if (value.checked === true && type === 'cu3') {
+    this.visibilityCu3 = true;
+}
+  if (value.checked === false && type === 'cu4') {
+    this.visibilityCu4 = false;
+}
+if (value.checked === true && type === 'cu4') {
+  this.visibilityCu4 = true;
+}
+if (value.checked === false && type === 'cu5') {
+  this.visibilityCu5 = false;
+}
+if (value.checked === true && type === 'cu5') {
+this.visibilityCu5 = true;
+}
 }
 
 }

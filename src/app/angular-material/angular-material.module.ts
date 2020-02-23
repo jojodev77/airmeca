@@ -16,6 +16,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [],
@@ -35,7 +36,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatGridListModule,
     MatTreeModule,
     MatRadioModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatSlideToggleModule
     
   ],
   exports: [
@@ -53,7 +55,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatGridListModule,
     MatTreeModule,
     MatRadioModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatSlideToggleModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
