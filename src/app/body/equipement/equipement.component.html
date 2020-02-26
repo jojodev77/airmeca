@@ -66,9 +66,9 @@
                        <section fxLayout="row">
 
                       <!-- centre usinage-->
-                      <section fxLayout="column" *ngIf="visibilityCu">
-                      <span> Centre d'usinage</span>
-                      <span>nombre: 26</span>
+                      <section fxLayout="column" *ngIf="visibilityCu" class="equipementRubrique mat-elevation-z8">
+                      <span class="titre"> Centre d'usinage</span>
+                      <span class="titre">nombre: 26</span>
                       Type:
                       <ul *ngFor="let cu of centreUsinage">
                       <li>{{cu.value}}</li>
@@ -76,9 +76,9 @@
                       </section>
                   
                     <!-- Tous CN-->
-                      <section fxLayout="column" *ngIf="visibilityTCN">
-                      <span> Tous-CN</span>
-                      <span>nombre: 7</span>
+                      <section fxLayout="column" *ngIf="visibilityTCN" class="equipementRubrique mat-elevation-z8">
+                      <span class="titre"> Tous-CN</span>
+                      <span class="titre">nombre: 7</span>
                       Type:
                       <ul *ngFor="let cu of toursCN">
                       <li>{{cu.value}}</li>
@@ -86,9 +86,9 @@
                       </section>
 
                      <!-- Tous tradionnel-->
-                      <section fxLayout="column" *ngIf="visibilityTT">
-                      <span> Tours et fraiseuse tradionnel</span>
-                      <span>nombre: 6</span>
+                      <section fxLayout="column" *ngIf="visibilityTT" class="equipementRubrique mat-elevation-z8">
+                      <span class="titre"> Tours et fraiseuse tradionnel</span>
+                      <span class="titre">nombre: 6</span>
                       Type:
                       <ul *ngFor="let cu of tourTraditionnel">
                       <li>{{cu.value}}</li>
@@ -99,8 +99,8 @@
                        <section fxLayout="row">
 
                        <!-- Machine spécale-->
-                      <section fxLayout="column" *ngIf="visibilityMS">
-                      <span> Machines spéciales</span>
+                      <section fxLayout="column" *ngIf="visibilityMS" class="equipementRubrique mat-elevation-z8">
+                      <span class="titre"> Machines spéciales</span>
                       Type:
                       <ul *ngFor="let cu of machineSpeciale">
                       <li>{{cu.value}}</li>
@@ -108,8 +108,8 @@
                       </section>
 
                        <!-- Informatique-->
-                      <section fxLayout="column" *ngIf="visibilityI">
-                      <span> Informatique</span>
+                      <section fxLayout="column" *ngIf="visibilityI" class="equipementRubrique mat-elevation-z8">
+                      <span class="titre"> Informatique</span>
                       Type:
                       <ul *ngFor="let cu of informatique">
                       <li>{{cu.value}}</li>
