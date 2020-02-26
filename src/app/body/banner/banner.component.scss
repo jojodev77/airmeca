@@ -17,15 +17,26 @@ iframe[_ngcontent-qap-c161] {
   z-index: 2000;
 }
 
-iframe[_ngcontent-qap-c161]:hover {
-  position: absolute;
-  transform: scale(1.3);
-}
+
 
 .iframe{
   position: absolute;
-  transform: scale(1.3);
   width: 250px;
   margin-left: 100px;
   margin-top: -100px;
+}
+
+.imgNouveaute{
+  background-image: url('../../../assets/caroussel/nouveaute2.jpg') ;
+  background-size: cover;
+  position: fixed;
+  width: 250px;
+  height: 250px;
+  opacity: 2;
+  margin: 50px;
+  z-index: 5000;
+}
+
+.imgNouveaute:hover{
+transform: scale(1.4);
 }
