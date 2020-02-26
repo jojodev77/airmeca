@@ -1,5 +1,5 @@
 export interface Equipement {
 name: string;
-type: string;
+nombre: string;
 capacite: string;
 }

@@ -2,8 +2,6 @@ import { Component, OnInit, ViewChild, OnChanges, SimpleChanges, AfterViewChecke
 
 /** models */
 import { Equipement } from './model/equipement.model';
-import { Equipements3axes } from './data/3axes.data';
-import { Equipements4axes } from './data/4axes.data';
 
 /** am */
 import { MatAccordion } from '@angular/material/expansion';
@@ -11,7 +9,9 @@ import { MatAccordion } from '@angular/material/expansion';
 /** services */
 import { PannelService } from 'src/app/config/pannel.service';
 import { trigger, state, transition, style, animate } from '@angular/animations';
-import { Equipements5axes } from './data/5axes.data';
+import { CentreUsinage } from './data/centreUsinage.data';
+import { ToursCN } from './data/tourCn.data';
+
 
 
 /** rxjs */
@@ -29,22 +29,20 @@ export class EquipementComponent implements OnInit, OnChanges {
   searchText;
   checked = true;
   type: string;
-  visibilityCu3 = true;
-  visibilityCu4 = true;
+  visibilityCu = true;
+  visibilityTCN = true;
   visibilityCu5 = true;
   visibilityTn = true;
   visibilityTm = true;
   visibilityMs = true;
   
-  equipement3Axes: Equipement[];
-  equipement4Axes: Equipement[];
-  equipement5Axes: Equipement[];
+  centreUsinage: any[];
+  toursCN: any[];
   constructor(private panelService: PannelService) { }
 
   ngOnInit() {
-    this.equipement3Axes = Equipements3axes;
-    this.equipement4Axes = Equipements4axes;
-    this.equipement5Axes = Equipements5axes;
+    this.centreUsinage =  CentreUsinage;
+    this.toursCN = ToursCN;
 
   }
 
@@ -58,17 +56,17 @@ export class EquipementComponent implements OnInit, OnChanges {
 
   manageEquipementVisibility(value, type) {
      console.log(type, value.checked)
-    if (value.checked === false && type === 'cu3') {
-      this.visibilityCu3 = false;
+    if (value.checked === false && type === 'cu') {
+      this.visibilityCu = false;
   }
   if (value.checked === true && type === 'cu3') {
-    this.visibilityCu3 = true;
+    this.visibilityCu = true;
 }
   if (value.checked === false && type === 'cu4') {
-    this.visibilityCu4 = false;
+    this. visibilityTCN = false;
 }
 if (value.checked === true && type === 'cu4') {
-  this.visibilityCu4 = true;
+  this. visibilityTCN = true;
 }
 if (value.checked === false && type === 'cu5') {
   this.visibilityCu5 = false;

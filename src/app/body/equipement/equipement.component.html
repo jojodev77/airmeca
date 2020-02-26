@@ -19,14 +19,15 @@
                           class="example-margin"
                           [checked]="checked"
                           color="primary"
-                          (change)="manageEquipementVisibility($event, 'cu3')">
-                        Centre usinage 3 axes
+                          (change)="manageEquipementVisibility($event, 'cu')">
+                        Centre usinages
                       </mat-slide-toggle>
                     </section>
                     <section class="example-section">
                       <mat-slide-toggle
                           class="example-margin"
                           [checked]="checked"
+                          color="primary"
                           (change)="manageEquipementVisibility($event, 'cu4')">
                         Centre usinage 4 axes
                       </mat-slide-toggle>
@@ -35,6 +36,7 @@
                       <mat-slide-toggle
                           class="example-margin"
                            [checked]="checked"
+                           color="primary"
                           (change)="manageEquipementVisibility($event, 'cu5')">
                         Centre usinage 5 axes
                       </mat-slide-toggle>
@@ -66,71 +68,72 @@
                    
                    </section>
                    <section fxLayout="column">
+                       <section fxLayout="row">
 
-
-        <!-- centre usinage 3 axes-->
-                    <section fxLayout="row" fxLayoutAlign="space-around center" *ngIf="visibilityCu3">
-                      <section   *ngFor="let e3axes of equipement3Axes">
-
-                      <mat-card class="mat-elevation-z5" >
-                        <mat-card-header class="open-close-container">
-                          <div mat-card-avatar class="example-header-image"></div>
-                          <mat-card-title>{{e3axes.name}}</mat-card-title>
-                          <mat-card-subtitle>{{e3axes.type}}</mat-card-subtitle>
-                        </mat-card-header>
-                      <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">-->
-                        <mat-card-content>
-                        <section fxLayout="column">
-                          <p>Caratéristiques: </p>
-                          <p>{{e3axes.capacite}}</p>
-                          </section>
-                        </mat-card-content>
-                      </mat-card>
+                      <!-- centre usinage-->
+                      <section fxLayout="column" *ngIf="visibilityCu">
+                      <span> Centre d'usinage</span>
+                      <span>nombre: 26</span>
+                      Type:
+                      <ul *ngFor="let cu of centreUsinage">
+                      <li>{{cu.value}}</li>
+                      </ul>
                       </section>
-                      </section>
-
-
-    <!-- centre usinage 4 axes-->
-                      <section fxLayout="row" fxLayoutAlign="space-around center" *ngIf="visibilityCu4">
-                      <section   *ngFor="let e3axes of equipement4Axes">
-              
-                      <mat-card class="mat-elevation-z5" >
-                        <mat-card-header  class="open-close-container">
-                          <div mat-card-avatar class="example-header-image"></div>
-                          <mat-card-title>{{e3axes.name}}</mat-card-title>
-                          <mat-card-subtitle>{{e3axes.type}}</mat-card-subtitle>
-                        </mat-card-header>
-                      <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">-->
-                        <mat-card-content>
-                        <section fxLayout="column">
-                           <p>Caratéristiques: </p>
-                          <p>{{e3axes.capacite}}</p>
-                          </section>
-                        </mat-card-content>
-                      </mat-card>
-                      </section>
+                  
+                    <!-- Tous CN-->
+                      <section fxLayout="column" *ngIf="visibilityTCN">
+                      <span> Tous-CN</span>
+                      <span>nombre: 7</span>
+                      Type:
+                      <ul *ngFor="let cu of toursCN">
+                      <li>{{cu.value}}</li>
+                      </ul>
                       </section>
 
-
-    <!-- centre usinage 5 axes-->
-                      <section fxLayout="row" fxLayoutAlign="space-around center" *ngIf="visibilityCu5">
-                      <section   *ngFor="let e3axes of equipement5Axes">
-              
-                      <mat-card class="mat-elevation-z5" >
-                        <mat-card-header  class="open-close-container">
-                          <div mat-card-avatar class="example-header-image"></div>
-                          <mat-card-title>{{e3axes.name}}</mat-card-title>
-                          <mat-card-subtitle>{{e3axes.type}}</mat-card-subtitle>
-                        </mat-card-header>
-                      <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">-->
-                        <mat-card-content>
-                        <section fxLayout="column">
-                           <p>Caratéristiques: </p>
-                          <p>{{e3axes.capacite}}</p>
-                          </section>
-                        </mat-card-content>
-                      </mat-card>
+                     <!-- Tous CN-->
+                      <section fxLayout="column" *ngIf="visibilityTCN">
+                      <span> Tous-CN</span>
+                      <span>nombre: 7</span>
+                      Type:
+                      <ul *ngFor="let cu of toursCN">
+                      <li>{{cu.value}}</li>
+                      </ul>
                       </section>
+
+                      </section>
+                       <section fxLayout="row">
+
+
+                       <!-- Tours traditionnel-->
+                      <section fxLayout="column" *ngIf="visibilityTCN">
+                      <span> Tous-CN</span>
+                      <span>nombre: 7</span>
+                      Type:
+                      <ul *ngFor="let cu of toursCN">
+                      <li>{{cu.value}}</li>
+                      </ul>
+                      </section>
+
+                       <!-- Machine spécale-->
+                      <section fxLayout="column" *ngIf="visibilityTCN">
+                      <span> Tous-CN</span>
+                      <span>nombre: 7</span>
+                      Type:
+                      <ul *ngFor="let cu of toursCN">
+                      <li>{{cu.value}}</li>
+                      </ul>
+                      </section>
+
+                       <!-- Informatique-->
+                      <section fxLayout="column" *ngIf="visibilityTCN">
+                      <span> Tous-CN</span>
+                      <span>nombre: 7</span>
+                      Type:
+                      <ul *ngFor="let cu of toursCN">
+                      <li>{{cu.value}}</li>
+                      </ul>
+                      </section>
+
                       </section>
 
 
