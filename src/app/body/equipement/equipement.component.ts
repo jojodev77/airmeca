@@ -9,8 +9,14 @@ import { MatAccordion } from '@angular/material/expansion';
 /** services */
 import { PannelService } from 'src/app/config/pannel.service';
 import { trigger, state, transition, style, animate } from '@angular/animations';
+
+
+/** Data */
 import { CentreUsinage } from './data/centreUsinage.data';
 import { ToursCN } from './data/tourCn.data';
+import { ToursTradionnel } from './data/tourTraditionnel.data';
+import { MachineSpeiale } from './data/machineSpeciale.data';
+import { Informatique } from './data/informatique.data';
 
 
 
@@ -31,18 +37,24 @@ export class EquipementComponent implements OnInit, OnChanges {
   type: string;
   visibilityCu = true;
   visibilityTCN = true;
-  visibilityCu5 = true;
-  visibilityTn = true;
-  visibilityTm = true;
-  visibilityMs = true;
+  visibilityTT = true;
+  visibilityMS = true;
+  visibilityI = true;
+
   
   centreUsinage: any[];
   toursCN: any[];
+  tourTraditionnel: any[];
+  machineSpeciale: any[];
+  informatique: any []
   constructor(private panelService: PannelService) { }
 
   ngOnInit() {
     this.centreUsinage =  CentreUsinage;
     this.toursCN = ToursCN;
+    this.tourTraditionnel = ToursTradionnel;
+    this.machineSpeciale = MachineSpeiale;
+    this.informatique = Informatique;
 
   }
 
@@ -59,32 +71,32 @@ export class EquipementComponent implements OnInit, OnChanges {
     if (value.checked === false && type === 'cu') {
       this.visibilityCu = false;
   }
-  if (value.checked === true && type === 'cu3') {
+  if (value.checked === true && type === 'cu') {
     this.visibilityCu = true;
 }
-  if (value.checked === false && type === 'cu4') {
+  if (value.checked === false && type === 'tcn') {
     this. visibilityTCN = false;
 }
-if (value.checked === true && type === 'cu4') {
-  this. visibilityTCN = true;
+if (value.checked === true && type === 'tcn') {
+  this.visibilityTCN = true;
 }
-if (value.checked === false && type === 'cu5') {
-  this.visibilityCu5 = false;
+if (value.checked === false && type === 'tt') {
+  this.visibilityTT = false;
 }
-if (value.checked === true && type === 'cu5') {
-this.visibilityCu5 = true;
+if (value.checked === true && type === 'tt') {
+this.visibilityTT = true;
 }
-if (value.checked === false && type === 'tn') {
-  this.visibilityTn = false;
+if (value.checked === false && type === 'ms') {
+  this.visibilityMS = false;
 }
-if (value.checked === true && type === 'tn') {
-this.visibilityTn = true;
+if (value.checked === true && type === 'ms') {
+this.visibilityMS = true;
 }
-if (value.checked === false && type === 'tm') {
-  this.visibilityTm = false;
+if (value.checked === false && type === 'i') {
+  this.visibilityI = false;
 }
-if (value.checked === true && type === 'tm') {
-this.visibilityTm = true;
+if (value.checked === true && type === 'i') {
+this.visibilityI = true;
 }
 }
 
