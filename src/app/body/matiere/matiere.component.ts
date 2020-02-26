@@ -9,17 +9,12 @@ import { Component, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 export class MatiereComponent implements OnInit, OnChanges {
   searchText: string;
   matiereArray = [
-    'INOX',
-    'INOX AERONAUTIQUE',
-    'ACIER',
-    'ALUMINIUM',
-    'LAITON',
-    'CUIVRE',
-    'COMPOSTE',
-    'PLASTIQUE',
-    'TITANE',
-    'ALLOY',
-    'INCONL'
+    'ALLIAGE D’ALUMINIUM : 2024, 2017, 6061, 7075',
+    'ALLIAGE D’INOX : 304L, 316L, Z10 ….',
+    'ALLIAGE DE TITANE : TA6V',
+    'ACIER DOUX AUX ACIERS TRAITES',
+    'ALLIAGE DE CUIVRE, LAITON,',
+    'ACIER A HAUTE DENSITE : INCONEL',
   ]
 
 
