@@ -56,10 +56,13 @@
                           [checked]="checked"
                             color="primary"
                           (change)="manageEquipementVisibility($event, 'i')">
-                         Informatque
+                         Informatique
                       </mat-slide-toggle>
                     </section>
-                   
+
+
+                   <input [ngModel]="searchText" name="searchText"
+               (ngModelChange)="setUppercaseName($event)" placeHolder="Rechercher"> 
                    
                    </section>
                    <section fxLayout="column">
@@ -70,7 +73,7 @@
                       <span class="titre"> Centre d'usinage</span>
                       <span class="titre">nombre: 26</span>
                       Type:
-                      <ul *ngFor="let cu of centreUsinage">
+                      <ul *ngFor="let cu of centreUsinage | filter : searchText">
                       <li>{{cu.value}}</li>
                       </ul>
                       </section>
@@ -80,7 +83,7 @@
                       <span class="titre"> Tour-CN</span>
                       <span class="titre">nombre: 7</span>
                       Type:
-                      <ul *ngFor="let cu of toursCN">
+                      <ul *ngFor="let cu of toursCN | filter : searchText">
                       <li>{{cu.value}}</li>
                       </ul>
                       </section>
@@ -90,7 +93,7 @@
                       <span class="titre"> Tours et fraiseuse tradionnel</span>
                       <span class="titre">nombre: 6</span>
                       Type:
-                      <ul *ngFor="let cu of tourTraditionnel">
+                      <ul *ngFor="let cu of tourTraditionnel | filter : searchText">
                       <li>{{cu.value}}</li>
                       </ul>
                       </section>
@@ -102,7 +105,7 @@
                       <section fxLayout="column" *ngIf="visibilityMS" class="equipementRubrique mat-elevation-z8">
                       <span class="titre"> Machines spéciales</span>
                       Type:
-                      <ul *ngFor="let cu of machineSpeciale">
+                      <ul *ngFor="let cu of machineSpeciale | filter : searchText">
                       <li>{{cu.value}}</li>
                       </ul>
                       </section>
@@ -111,7 +114,7 @@
                       <section fxLayout="column" *ngIf="visibilityI" class="equipementRubrique mat-elevation-z8">
                       <span class="titre"> Informatique</span>
                       Type:
-                      <ul *ngFor="let cu of informatique">
+                      <ul *ngFor="let cu of informatique | filter : searchText">
                       <li>{{cu.value}}</li>
                       </ul>
                       </section>

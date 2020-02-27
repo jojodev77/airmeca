@@ -32,7 +32,7 @@ export class EquipementComponent implements OnInit, OnChanges {
   @ViewChild('myaccordeon')myPanels: MatAccordion;
   panelOpenState = false;
   open: string = null;
-  searchText;
+  searchText: string;
   checked = true;
   type: string;
   visibilityCu = true;
@@ -99,5 +99,7 @@ if (value.checked === true && type === 'i') {
 this.visibilityI = true;
 }
 }
-
+setUppercaseName(searchText: string) {
+  this.searchText = searchText;
+}
 }

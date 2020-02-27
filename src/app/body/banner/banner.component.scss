@@ -63,16 +63,16 @@ transform: scale(1.4);
     width: 150px;
     height: 150px;
     margin-left: 100px;
-    margin-top: -100px;
+    margin-top: 150px;
   }
   .imgNouveaute{
     background-image: url('../../../assets/caroussel/nouveaute2.jpg') ;
     background-size: cover;
     position: fixed;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 150px;
     opacity: 2;
-    margin: 50px;
+    margin-left: -45px;
     z-index: 5000;
   }
 }
