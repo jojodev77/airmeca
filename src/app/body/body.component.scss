@@ -58,13 +58,16 @@ app-client, app-matiere, app-qualite, app-banner, app-equipement{
   @media (max-width:840px) {
     .topScrollL{
      display: none;
+     opacity: 0;
     }
   
     .topScrollR{
       display: none;
+      opacity: 0;
   }
   
   .topScroll{
     display: none;
+    opacity: 0;
   }
   }

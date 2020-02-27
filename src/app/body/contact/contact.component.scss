@@ -44,3 +44,28 @@
 h3:hover{
   color: red;
 }
+
+@media (max-width:840px) {
+  .contact {
+    width: 105%;
+    min-width: 100%;
+    border-radius: round($number: 45);
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: #3f87a6 !important;
+    margin-bottom: 25px;
+    font-family: 'cyril';
+    min-height: 450px;
+    min-width: 100%;
+    border-radius: 10px;
+    border-left: 11px solid #E6E6E6;
+    border-right: 11px solid #E6E6E6;
+    border-bottom: 11px solid grey;
+    height: 1000px;
+    margin-left: -25px;
+  }
+
+  .information{
+   margin-top: 50px;
+  }
+}

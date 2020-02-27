@@ -104,3 +104,15 @@
     font-weight: bold;
     margin: 20px;
   }
+
+  @media (max-width:840px) {
+    .equipementRubrique{
+      background-color: white;
+      text-align: center;
+      font-family: 'cyril';
+      font-size: 16px;
+      width: 450px;
+ margin-left: -30px;
+     color: black;
+    }
+  }
