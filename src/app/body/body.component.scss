@@ -54,3 +54,17 @@ app-client, app-matiere, app-qualite, app-banner, app-equipement{
   .example-tooltip-red {
     background: #b71c1c;
   }
+
+  @media (max-width:840px) {
+    .topScrollL{
+     display: none;
+    }
+  
+    .topScrollR{
+      display: none;
+  }
+  
+  .topScroll{
+    display: none;
+  }
+  }

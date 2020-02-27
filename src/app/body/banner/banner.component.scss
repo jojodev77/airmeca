@@ -40,3 +40,22 @@ iframe[_ngcontent-qap-c161] {
 .imgNouveaute:hover{
 transform: scale(1.4);
 }
+
+@media (max-width:840px) {
+  .picsum-img-wrapper{
+    position: absolute;
+    width: 400px;
+    }
+
+    .imgCaroussel{
+      max-width: 350px;
+    }
+
+    ngb-carousel img {
+      width: 450px;
+      outline: none;
+      opacity: 0.4;
+      height: 550px;
+     max-width: 450px;
+  }
+}
