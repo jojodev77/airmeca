@@ -13,6 +13,8 @@ import { ContactComponent } from './body/contact/contact.component';
 
 
 const routes: Routes = [
+  {path: '', component: BodyComponent},
+  {path: '**', component: BodyComponent, pathMatch: 'full'},
   {
      path: 'body', component: BodyComponent, children: [
       {path: 'client', component: ClientComponent},

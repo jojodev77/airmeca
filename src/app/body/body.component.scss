@@ -56,18 +56,25 @@ app-client, app-matiere, app-qualite, app-banner, app-equipement{
   }
 
   @media (max-width:840px) {
+    mat-icon{
+   margin-left: 150px;
+    }
+
     .topScrollL{
      display: none;
      opacity: 0;
+     visibility: hidden;
     }
   
     .topScrollR{
       display: none;
       opacity: 0;
+      visibility: hidden;
   }
   
   .topScroll{
     display: none;
     opacity: 0;
+    visibility: hidden;
   }
   }

@@ -59,8 +59,8 @@ transform: scale(1.4);
 @media (max-width:840px) {
 
   .banner{
-   width: 100%;
-   min-width: 440px;
+    width: 600px;
+    margin-left: -30px;
   }
   .picsum-img-wrapper{
     position: absolute;
@@ -72,11 +72,10 @@ transform: scale(1.4);
     }
 
     ngb-carousel img {
-      width: 450px;
+      width: 630px;
       outline: none;
       opacity: 0.4;
       height: 550px;
-     max-width: 450px;
   }
   .iframe{
     position: absolute;
