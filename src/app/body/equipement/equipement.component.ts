@@ -32,7 +32,7 @@ export class EquipementComponent implements OnInit, OnChanges {
   @ViewChild('myaccordeon')myPanels: MatAccordion;
   panelOpenState = false;
   open: string = null;
-  searchText: string;
+  searchText: any;
   checked = true;
   type: string;
   visibilityCu = true;
@@ -59,7 +59,7 @@ export class EquipementComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-   
+    this.searchText = changes.searchText.currentValue;
   }
 
   openAll() {

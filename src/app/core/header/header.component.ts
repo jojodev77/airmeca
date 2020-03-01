@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnInit, OnDestroy, OnChanges, SimpleChanges, ViewChild, ElementRef } from '@angular/core';
 import { Router, NavigationEnd, Scroll } from '@angular/router';
 
 /** services */
@@ -27,6 +27,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
   routingVisibility: boolean;
   router$: Subscription;
   open: string;
+  navbarOpen = false;
+  @ViewChild('navBurger') navBurger: ElementRef;
+  @ViewChild('navMenu') navMenu: ElementRef;
 
   constructor(private loc: Location, private router: Router,
               private viewportScroller: ViewportScroller, private panelService: PannelService) {
@@ -80,6 +83,10 @@ routingToContact() {
   this.router.navigate(['body/contact'], { fragment: 'contact' }).finally(() => {
       this.router.onSameUrlNavigation = 'ignore'; // Restore config after navigation completes
   });
+}
+
+toggleNavbar() {
+  this.navbarOpen = !this.navbarOpen;
 }
 
 locationBack() {

@@ -5,7 +5,7 @@
 
          <img src="assets/logo.png" class="logo">
 
-    
+    <!--
     <section class="conteneur-nav">
         <nav>
             <label for="mobile" class="mob"><mat-icon>subject</mat-icon></label>
@@ -19,4 +19,37 @@
                 </ul>   
         </nav>
     </section>
+    -->
+  <nav class="navbar navbar-expand-lg navbar-white bg-whte">
+    <a class="navbar-brand" href="#">
+ 
+    </a>
+  
+    <button class="navbar-toggler" type="button"
+            (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"><mat-icon> format_align_justify</mat-icon></span>
+    </button>
+  
+  
+    <div class="collapse navbar-collapse"
+         [ngClass]="{ 'show': navbarOpen }" id="menua">
+      <ul class="navbar-nav  mr-auto" id="menua">
+        <li class="nav-item">
+          <a class="nav-link"  (click)="routingToClient()" >Secteur activité</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  (click)="toggleNavbar()" (click)="routingToMatiere()" >Matières usinées</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  (click)="toggleNavbar()" (click)="routingToQualite()">Service qualité</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="toggleNavbar()" (click)="routingToEquipement()">Equipement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  (click)="toggleNavbar()" (click)="routingToContact()">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </section>

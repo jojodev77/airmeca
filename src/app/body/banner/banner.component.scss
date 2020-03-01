@@ -41,14 +41,34 @@ iframe[_ngcontent-qap-c161] {
 transform: scale(1.4);
 }
 
-@media (max-width:840px) {
+@media (max-width:1300px) {
+  .banner{
+    max-width: 1300px;
+  }
   .picsum-img-wrapper{
     position: absolute;
-    width: 400px;
+    width: 100%;
     }
 
     .imgCaroussel{
-      max-width: 350px;
+      width: 100%;
+    }
+
+}
+
+@media (max-width:840px) {
+
+  .banner{
+   width: 100%;
+   min-width: 440px;
+  }
+  .picsum-img-wrapper{
+    position: absolute;
+    width: 100%;
+    }
+
+    .imgCaroussel{
+      width: 100%;
     }
 
     ngb-carousel img {

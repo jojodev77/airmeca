@@ -34,141 +34,116 @@ border-radius: 30%;
 
 
 
-nav{
-    //position: sticky;
-    top: 0px;
-}
-
-nav input[type=checkbox]{
-    display: none;
-}
-nav label{
-    display: inline-block;
-    padding: 10px 0px;
-}
-nav ul{
-    display: none;
-    list-style-type: none;
-}
-nav input[type=checkbox]:checked + ul{
-    display: flex;
-    flex-flow : column wrap;
-}
-
-nav > div > ul > li > a{
+a {
     color: white;
-}
-nav a{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-}
-
-li{
-    padding: 10px;
-    font-family: 'cyril';
-    cursor: pointer;
-}
-
-span{
-    font-family: 'cyril';
-    height: 20px;
-   padding: 5px;
-   cursor: pointer;
-}
-
-mat-icon{
-    padding-left: 10px;
-    padding-right: 20px !important;
-}
-
-span:hover{
-    color: red;
-    font-size: 16px;
-}
-
-@media screen and (min-width: 980px){
-   
-
-
-    .conteneur-nav{
-        position: static;
-        margin-left: 25px;
-    }
-    nav label, nav input{
-        display: none;
-    }
-    nav input[type=checkbox]:checked + ul, nav ul{
-        display: flex;
-        flex-flow: row wrap;
-    }
-    nav ul li{
-        position: relative;
-    }
-    nav > div > ul > li > a{
-        color: black;
-    }
-    nav a{
-        border-bottom: 2px solid transparent;
-    }
-    nav a:hover{
-        color: red;
-        border-bottom: 2px solid blue;
-    }
-    .sous{
-        display: none;
-        box-shadow: 0px 1px 2px #CCC;
-        background-color: white;
-        position: absolute;
-        width: 100%;
-    }
-    nav > div > ul li:hover .sous{
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .sous a{
-        border-bottom: none;
-        background-color: white;
-    }
-    .sous a:hover{
-        border-bottom: none;
-        background-color: RGBa(200,200,200,0.1);
-    }
-    .deroulant > a::after{
-        content:" ▼";
-        font-size: 12px;
-    }
-}
-
-
-@media (max-width:840px) {
-    .header{
-    width: 100%;
-    }
+    font-size: 1.7vw;
     
-    .logo {
-        top: 10;
-        border: 1px solid transparent;
-        background-size: cover;
-        margin-top: -10px;
-        border-radius: 30px;
-        height: 100px;
-        width: 100px;
-    } 
-    .conteneur-nav{
-        position: static;
-        margin-left: 25px;
-    }
-    mat-icon{
-       margin: 25px ;
-    }
+}
+a:hover {
+    color: red;
+}
+span {
+    color: black;
 
-    img {
-        width: 100px;
-        /* height: 100px; */
-        padding: 3px;
-        border-radius: 10px;
+}
+    span:hover {
+        color: red;
     }
+li:hover{
+    color:red; 
+    font-size: 1.7vw;
+}
+li {
+    margin-left: 2%;
+    list-style-type: none; 
+    width: 140px;
+    font-family: "cyril";
+    cursor: pointer;
+}
 
+
+    #menua {
+        text-align: center;
+        background-color: white;
+        color: black;
+        font-family: "cyril";
+        font-size: 16px;
    }
+
+   .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 14px;
+}
+    .navbar-toggle{
+        background-color: white;
+    }
+
+  
+        .navbar-brand {
+            display: none;
+        }
+        button {
+            display: none;
+        }
+
+        @media  (max-width: 876px){
+
+            #mmm {
+                color: white;
+                text-align: center;
+                border: 5px solid black;
+                margin-top: 0.3%;
+                background-color: black;
+                width: 110% ;
+                background-color: black; }
+            
+                #menua {
+                    text-align: center;
+                    font-size: 1.5vw;
+                    font-weight: bolder;
+                    letter-spacing: 1px;
+                     padding: -1.5%;
+                     background-color: black;
+                    color: white;
+                    margin-left: 1%;
+                background-color: black; }
+            .navbar-toggle{
+                background-color: black;
+            }
+                    }
+@media  (max-width: 700px){
+    .navbar-brand {
+        display: block;
+    }
+    button {
+        display: block;
+        color: white;
+        background-color: black;
+        margin-top: 5%;
+        margin-left: 80%;
+    }  
+                #menua {
+                    text-align: center;
+                    font-size: 2.7vw;
+                    font-weight: bolder;
+                    letter-spacing: 1px;
+                     padding: -1.5%;
+                    color: white;
+                    position: absolute;
+                    z-index: 2000;
+                    margin-left: -5%;
+                }
+                    span {
+                        font-size: 3vw;
+                        letter-spacing: 0.5vw;
+                        color: white;
+                    }
+                    span:hover {
+                        color: red;
+                    }
+               a {
+                    font-size: 4.8vw;
+                }
+            
+}
