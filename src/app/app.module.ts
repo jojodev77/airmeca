@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
 
 /** Angularflex */
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -42,7 +43,7 @@ import { FilterPipe } from './config/filter.pipe';
     CUSTOM_ELEMENTS_SCHEMA,
     NO_ERRORS_SCHEMA
   ],
-  providers: [],
+  providers: [ {provide : LocationStrategy , useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

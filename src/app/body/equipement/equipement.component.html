@@ -13,7 +13,7 @@
 
                 </mat-panel-title>
                   </mat-expansion-panel-header>
-                   <section fxLayout="row" fxLayoutAlign="space-around center" >
+                   <section fxLayout.md="row" fxLayout.lg="row" fxLayout.xs="column" fxLayoutAlign="space-around center" >
                    <section class="example-section">
                       <mat-slide-toggle
                           class="example-margin"
@@ -56,7 +56,7 @@
                           [checked]="checked"
                             color="primary"
                           (change)="manageEquipementVisibility($event, 'i')">
-                         Informatque
+                         Informatique
                       </mat-slide-toggle>
                     </section>
                    
@@ -69,7 +69,7 @@
                       <section fxLayout="column" *ngIf="visibilityCu" class="equipementRubrique mat-elevation-z8">
                       <span class="titre"> Centre d'usinage</span>
                       <span class="titre">nombre: 13</span>
-                      Type:
+
                       <ul *ngFor="let cu of centreUsinage">
                       <li>{{cu.value}}</li>
                       </ul>
@@ -79,7 +79,7 @@
                       <section fxLayout="column" *ngIf="visibilityTCN" class="equipementRubrique mat-elevation-z8">
                       <span class="titre"> Tour-CN</span>
                       <span class="titre">nombre: 7</span>
-                      Type:
+
                       <ul *ngFor="let cu of toursCN">
                       <li>{{cu.value}}</li>
                       </ul>
@@ -101,7 +101,7 @@
                        <!-- Machine spécale-->
                       <section fxLayout="column" *ngIf="visibilityMS" class="equipementRubrique mat-elevation-z8">
                       <span class="titre"> Machines spéciales</span>
-                      Type:
+
                       <ul *ngFor="let cu of machineSpeciale">
                       <li>{{cu.value}}</li>
                       </ul>
@@ -110,7 +110,7 @@
                        <!-- Informatique-->
                       <section fxLayout="column" *ngIf="visibilityI" class="equipementRubrique mat-elevation-z8">
                       <span class="titre"> Informatique</span>
-                      Type:
+
                       <ul *ngFor="let cu of informatique">
                       <li>{{cu.value}}</li>
                       </ul>

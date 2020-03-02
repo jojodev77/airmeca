@@ -18,7 +18,6 @@ export class ClientComponent implements OnInit {
 
   ngOnInit() {
     this.open = this.panelService.open;
-    console.log(this.panelService.open);
   }
 
 
@@ -27,7 +26,6 @@ export class ClientComponent implements OnInit {
     if (this.panelService.open === 'open') {
       this.openAll();
     }
-    console.log(this.panelService.open);
   }
 
   openAll() {

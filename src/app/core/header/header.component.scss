@@ -16,8 +16,10 @@ img {
     top: 10;
     border: 1px solid transparent;
     background-size: cover;
-    margin-top: 50px;
+    margin-top: 10px;
     border-radius: 30px;
+    height: 100px;
+    z-index: 1000;
 }
 
 
@@ -86,9 +88,41 @@ li {
         button {
             display: none;
         }
+        @media  (max-width: 1080px){
+
+            .header{
+                height: 100px;
+                position: sticky;
+                background: white;
+                border-radius: 10px;
+                width: 1050px;
+            }
+
+            #menua {
+                text-align: center;
+                font-size: 1.5vw;
+                font-weight: bolder;
+                letter-spacing: 1px;
+                 padding: -1.5%;
+                 background-color: black;
+                color: white;
+                margin-left: 1%;
+            background-color: black;
+            margin-top: 20px;
+         
+         }
+         .navbar-toggler:not(:disabled):not(.disabled) {
+            cursor: pointer;
+            display: block;
+        }
+
+        }
 
         @media  (max-width: 876px){
-
+            .navbar-toggler:not(:disabled):not(.disabled) {
+                cursor: pointer;
+                display: block;
+            }
             #mmm {
                 color: white;
                 text-align: center;
@@ -107,15 +141,21 @@ li {
                      background-color: black;
                     color: white;
                     margin-left: 1%;
-                background-color: black; }
+                background-color: black;
+                margin-top: -20px;
+             }
             .navbar-toggle{
                 background-color: black;
             }
                     }
 @media  (max-width: 700px){
-    .navbar-brand {
+
+    .navbar-toggler[_ngcontent-nbs-c185]:not(:disabled):not(.disabled) {
+        cursor: pointer;
         display: block;
+        margin-left: -80px;
     }
+
     button {
         display: block;
         color: white;
@@ -132,7 +172,8 @@ li {
                     color: white;
                     position: absolute;
                     z-index: 2000;
-                    margin-left: -5%;
+                    margin-left: -100px;
+                    margin-top: -10px;
                 }
                     span {
                         font-size: 3vw;
@@ -146,4 +187,14 @@ li {
                     font-size: 4.8vw;
                 }
             
+}
+
+@media  (max-width: 700px){
+
+    .navbar-toggler[_ngcontent-nbs-c185]:not(:disabled):not(.disabled) {
+        cursor: pointer;
+        display: block;
+        margin-left: -100px;
+    }
+
 }

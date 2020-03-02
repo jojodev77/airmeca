@@ -54,12 +54,70 @@ app-client, app-matiere, app-qualite, app-banner, app-equipement{
   .example-tooltip-red {
     background: #b71c1c;
   }
-
   @media (max-width:840px) {
-    mat-icon{
-   margin-left: 200px;
+    .topScrollL{
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+     }
+   
+     .topScrollR{
+       display: none;
+       opacity: 0;
+       visibility: hidden;
+   }
+   
+   .topScroll{
+     display: none;
+     opacity: 0;
+     visibility: hidden;
+   }
+   .mat-icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    width: 24px;
+    margin-left: 100px;
+}
+  }
+  @media (max-width:840px) {
+    .mat-icon {
+      background-repeat: no-repeat;
+      display: inline-block;
+      fill: currentColor;
+      height: 24px;
+      width: 24px;
+      margin-left: 100px;
+  }
+    .topScrollL{
+     display: none;
+     opacity: 0;
+     visibility: hidden;
     }
+  
+    .topScrollR{
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+  }
+  
+  .topScroll{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  }
 
+  @media (max-width:700px) {
+    .mat-icon {
+      background-repeat: no-repeat;
+      display: inline-block;
+      fill: currentColor;
+      height: 24px;
+      width: 24px;
+      margin-left: 220px;
+  }
     .topScrollL{
      display: none;
      opacity: 0;

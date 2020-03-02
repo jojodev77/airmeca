@@ -32,6 +32,8 @@ const routes: Routes = [
   imports: [ RouterModule.forRoot(routes,  {
     scrollPositionRestoration: 'enabled',
     anchorScrolling: 'enabled',
+    enableTracing: true,
+    useHash: true
   }),
   CommonModule
 
