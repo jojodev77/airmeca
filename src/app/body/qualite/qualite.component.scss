@@ -110,3 +110,32 @@ p{
         padding: 8px 0;
     }
   }
+
+  @media (max-width:640px) {
+    .mat-card-actions {
+        margin-left: 30px;
+        font-family: cyril !important;
+        margin-right: -8px;
+        padding: 8px 0;
+    }
+
+    img {
+        vertical-align: middle;
+        border-style: none;
+        padding: 25px;
+        width: 260px;
+        height: 260px;
+    }
+
+    p{
+        font-family: 'cyril';
+        font-size: 22px;
+        letter-spacing: 0.4vw;
+        color: black;
+        font-weight: bolder;
+        padding-top: 5px;
+        text-align: center;
+        border-radius: 10px;
+        width: 80%;
+      }
+  }

@@ -40,3 +40,16 @@ button, input {
   border-radius: 10px;
   text-align: center;
 }
+
+@media (max-width:600px) {
+
+  li {
+    padding: 35px;
+    font-size: 22px;
+    letter-spacing: 0.4em;
+    font-weight: bold;
+    font-family: 'cyril';
+    color: black;
+  }
+
+}

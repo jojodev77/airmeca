@@ -121,24 +121,25 @@ transform: scale(1.4);
       font-family: "cyril";
       font-size: 16px;
       margin-left: -200px;
-      margin-top: -40px;
+      margin-top: -100px;
       width: 1400px;
   }
   .iframe{
     position: absolute;
-    width: 200px;
+    width: 350px;
     height: 200px;
-    margin-left: 300px;
+    margin-left: 400px;
     margin-top: 150px;
   }
   .imgNouveaute{
     background-image: url('../../../assets/caroussel/nouveaute2.jpg') ;
     background-size: cover;
     position: fixed;
-    width: 150px;
+    width: 250px;
     height: 200px;
     opacity: 2;
     margin-left: -45px;
+    margin-top: -80px;
     z-index: 5000;
   }
 }
