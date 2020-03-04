@@ -136,3 +136,15 @@ app-client, app-matiere, app-qualite, app-banner, app-equipement{
     visibility: hidden;
   }
   }
+
+  
+  @media (max-width:600px) {
+    .mat-icon {
+      background-repeat: no-repeat;
+      display: inline-block;
+      fill: currentColor;
+      height: 24px;
+      width: 24px;
+      margin-left: 800px;
+  }
+}

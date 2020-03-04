@@ -97,3 +97,28 @@ h3:hover{
    margin-top: 120px;
   }
 }
+
+@media (max-width:640px) {
+  .contact {
+    width: 1100px;
+    min-width: 100%;
+    border-radius: round($number: 45);
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: #3f87a6 !important;
+    margin-bottom: 25px;
+    font-family: 'cyril';
+    min-height: 450px;
+    min-width: 900px;
+    border-radius: 10px;
+    border-left: 11px solid #E6E6E6;
+    border-right: 11px solid #E6E6E6;
+    border-bottom: 11px solid grey;
+    height: 900px;
+    margin-left: -25px;
+  }
+
+  .information{
+   margin-top: 120px;
+  }
+}
