@@ -1,17 +1,10 @@
 
   
     <section fxLayout="column" class="client mat-elevation-z4">
-     <mat-accordion #myaccordeon="matAccordion">
-        <mat-expansion-panel 
-          (opened)="panelOpenState = true"
-          (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
-            <mat-panel-title class="accordeon mat-elevation-z8">
+    
               <section fxLayout="row" fxLayoutAlign="space-evenly center" >
                 <span>NOS SECTEURS D'ACTIVITES:</span>
              </section>
-                </mat-panel-title>
-                  </mat-expansion-panel-header>
                   <section fxLayout="column">
 
                     <section fxLayout.md="row" fxLayout.lg="row" fxLayout.xs="column" fxLayoutAlign="space-around center" class="contenu">
@@ -40,9 +33,5 @@
                         <img src="assets/client/medical.jpg" class="mat-elevation-z8">
                     </section>
                    </section>
-                   
-                   
                    </section>
-              </mat-expansion-panel>
-        </mat-accordion>
-
+             
