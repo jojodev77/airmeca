@@ -102,6 +102,14 @@ p{
     width: 80%;
   }
 
+  span{
+    color: white;
+    font-family: 'cyril';
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+  }
+
   @media (max-width:840px) {
     .mat-card-actions {
         margin-left: 30px;
