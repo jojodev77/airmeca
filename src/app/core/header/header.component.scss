@@ -202,7 +202,7 @@ li {
 
     .header{
         height: 150px;
-        width: 1250px;
+        width: 500px;
         position: sticky;
         background: white;
         border-radius: 10px;
@@ -223,7 +223,7 @@ li {
     background-size: cover;
     border-radius: 30px;
     height: 120px;
-    margin-left: -900px;
+    margin-left: -200px;
     margin-top: 10px;
     z-index: 1000;
 }
@@ -231,7 +231,7 @@ li {
 .navbar-toggler:not(:disabled):not(.disabled) {
     cursor: pointer;
     display: block;
-    margin-left: -900px;
+    margin-left: -200px;
     margin-top: 10px;
 }
 
@@ -243,7 +243,7 @@ li {
     color: black;
     font-family: "cyril";
     font-size: 16px;
-    margin-left: -500px;
+    margin-left: -100px;
     margin-top: -30px;
 }
  
