@@ -100,22 +100,17 @@ h3:hover{
 
 @media (max-width:640px) {
   .contact {
-    width: 1100px;
-    min-width: 100%;
+    width: 600px;
     border-radius: round($number: 45);
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-left: -70px;
     background-color: #3f87a6 !important;
     margin-bottom: 25px;
     font-family: 'cyril';
-    min-height: 450px;
-    min-width: 900px;
     border-radius: 10px;
     border-left: 11px solid #E6E6E6;
     border-right: 11px solid #E6E6E6;
     border-bottom: 11px solid grey;
     height: 900px;
-    margin-left: -25px;
   }
 
   .information{

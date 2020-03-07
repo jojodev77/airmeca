@@ -147,6 +147,16 @@ span{
 
 
   @media (max-width:640px) {
+
+    .equipement {
+      border-radius: 10px;
+      margin: 50px;
+      background-color: #3f87a6 !important;
+      font-family: 'cyril';
+      width: 500px;
+      }
+
+
     .equipementRubrique{
       background-color: white;
       text-align: center;
@@ -167,9 +177,10 @@ span{
       font-size: 22px;
       color: black;
       font-family: 'cyril';
+      padding: 10px;
   }
 
   .trier{
-    margin-left: -750px;
+    margin-left: -50px;
   }
   }

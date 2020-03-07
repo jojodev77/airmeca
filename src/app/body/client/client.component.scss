@@ -66,6 +66,15 @@ img:hover{
 
 @media (max-width:640px) {
 
+  .client {
+    border-radius: 10px;
+    margin: 50px;
+    background-color: #3f87a6 !important;
+    font-family: 'cyril';
+    width: 500px;
+    margin-left: -40px;
+  }
+
   img{
     border-radius: 10px;
     width: 220px;
