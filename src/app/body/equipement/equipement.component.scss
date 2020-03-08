@@ -11,6 +11,7 @@
     color: black;
     z-index: 1000;
     opacity: 3;
+    background-color: lightgray;
   }
   
   .accordeon{
@@ -112,7 +113,7 @@ span{
 }
   
   .equipementRubrique{
-    background-color: white;
+    background-color: lightgray;
     text-align: center;
     font-family: 'cyril';
     font-size: 16px;
@@ -129,9 +130,15 @@ span{
     margin: 20px;
   }
 
+  .trier{
+    color: white;
+    font-family: 'cyril';
+    border: 1px solid lightgray;
+  }
+
   @media (max-width:840px) {
     .equipementRubrique{
-      background-color: white;
+      background-color: lightgray;
       text-align: center;
       font-family: 'cyril';
       font-size: 16px;
@@ -150,20 +157,20 @@ span{
 
     .equipement {
       border-radius: 10px;
-      margin: 50px;
       background-color: #3f87a6 !important;
       font-family: 'cyril';
       width: 500px;
+      margin-left: -45px;
       }
 
 
     .equipementRubrique{
-      background-color: white;
+      background-color: lightgray;
       text-align: center;
       font-family: 'cyril';
       font-size: 16px;
       width: 300px;
-      margin-left: 20px;
+      margin-left: 110px;
      color: black;
     }
 
@@ -181,10 +188,13 @@ span{
   }
 
   .trier{
-    margin-left: -200px;
+    margin-left: -110px;
+    color: white;
+    font-family: 'cyril';
+    border: 1px solid lightgray;
   }
 
   span{
-    margin-left: -120px;
+    margin-left: -90px;
   }
   }

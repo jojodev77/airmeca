@@ -102,7 +102,7 @@ transform: scale(1.4);
 @media (max-width:650px) {
 
   .banner{
-    width: 350px;
+    width: 550px;
     margin-top: -20px;
   }
   .picsum-img-wrapper{
@@ -120,12 +120,12 @@ transform: scale(1.4);
       color: black;
       font-family: "cyril";
       font-size: 16px;
-      width: 300px;
+      width: 650px;
       max-width: 100%;
   }
   .iframe{
     position: absolute;
-    width: 250px;
+    width: 350px;
     height: 150px;
     margin-left: 20px;
     margin-top: 200px;
@@ -134,7 +134,7 @@ transform: scale(1.4);
     background-image: url('../../../assets/caroussel/nouveaute2.jpg') ;
     background-size: cover;
     position: fixed;
-    width: 250px;
+    width: 300px;
     height: 150px;
     opacity: 2;
     margin-left: -45px;
