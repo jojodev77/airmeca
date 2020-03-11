@@ -3,7 +3,7 @@
   min-width: 1600px !important;
   min-height: 550px;
   border-radius: 20px;
-  margin-top: 35px;
+  margin-top: -40px;
   margin-left: -45px;
 }
 
@@ -53,10 +53,14 @@ ngb-carousel img {
   color: black;
 }
 
-p{
+p, h3{
   font-family: 'cyril';
   color: black;
   z-index: 2000;
+  font-weight: bold;
+  background-color: white;
+  width: 300px;
+  margin-left: 300px;
 }
 
 @media (max-width:1300px) {
@@ -95,34 +99,19 @@ p{
 }
 
 }
-@media (max-width:840px) {
 
-  .banner{
-    width: 1000px;
-    margin-left: -30px;
-  }
-
-  ngb-carousel img {
-    width: 1050px;
-    outline: none;
-    opacity: 0.4;
-    height: 550px;
-}
-.iframe{
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  margin-left: 160px;
-  margin-top: -100px;
-}
-}
 
 @media (max-width:650px) {
 
   .banner{
     width: 460px;
+    max-width: 460px !important;
+    min-height: 550px;
+    border-radius: 20px;
     margin-top: -20px;
+    margin-left: -550px;
   }
+
   .picsum-img-wrapper{
     position: absolute;
     width: 100%;
@@ -138,8 +127,8 @@ p{
       color: black;
       font-family: "cyril";
       font-size: 16px;
-      width: 500px;
-      max-width: 100%;
+      width: 460px;
+      max-width: 460px !important;
   }
   .iframe{
     position: absolute;
@@ -158,5 +147,13 @@ p{
     margin-left: -45px;
     margin-top: 30px;
     z-index: 5000;
+  }
+  p, h3{
+    font-family: 'cyril';
+    color: black;
+    z-index: 2000;
+    font-weight: bold;
+    background-color: white;
+    margin-left: -50px;
   }
 }

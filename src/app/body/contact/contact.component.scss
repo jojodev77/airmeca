@@ -1,7 +1,7 @@
 .contact {
     width: 105%;
     min-width: 100%;
-    border-radius: round($number: 45);
+    border-radius: 10px;
     margin-top: 50px;
     margin-left: 50px;
     background-color: #3f87a6 !important;
@@ -13,6 +13,7 @@
     border-left: 11px solid #E6E6E6;
     border-right: 11px solid #E6E6E6;
     border-bottom: 11px solid grey;
+    border: 5px solid lightgray;
   }
 
   .information{
