@@ -15,20 +15,7 @@
     background-color: lightgray;
   }
   
-  .accordeon{
-    background-color: #3f87a6 !important;
-    font-family: 'cyril';
-  }
-  
-  .mat-expansion-panel-header:not([aria-disabled=true]) {
-    cursor: pointer;
-    background-color: #3f87a6 !important;
-  }
-  
-  .mat-expansion-panel {
-    background-color: #3f87a6 !important;
-    color:white;
-  }
+
   
   img{
     padding: 30px;
@@ -167,11 +154,12 @@ span{
 
     .equipementRubrique{
       background-color: lightgray;
+      border: 5px solid #3f87a6;
       text-align: center;
       font-family: 'cyril';
       font-size: 16px;
-      width: 300px;
-      margin-left: 60px;
+      width: 450px;
+      margin-left: 20px;
      color: black;
     }
 

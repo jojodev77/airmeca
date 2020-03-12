@@ -135,17 +135,17 @@ p, h3{
     width: 350px;
     height: 150px;
     margin-left: -30px;
-    margin-top: 200px;
+    margin-top: -200px;
   }
   .imgNouveaute{
     background-image: url('../../../assets/caroussel/nouveaute2.jpg') ;
     background-size: cover;
     position: fixed;
-    width: 300px;
-    height: 150px;
+    width: 400px;
+    height: 250px;
     opacity: 2;
-    margin-left: -95px;
-    margin-top: 30px;
+    margin-left: -105px;
+    margin-top: -5px;
     z-index: 5000;
   }
   p, h3{

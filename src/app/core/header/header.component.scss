@@ -65,6 +65,7 @@ li {
 }
 
 
+
     #menua {
         text-align: center;
         background-color: white;
@@ -121,83 +122,8 @@ li {
 
         }
 
-        @media  (max-width: 876px){
-            .navbar-toggler:not(:disabled):not(.disabled) {
-                cursor: pointer;
-                display: block;
-            }
-            #mmm {
-                color: white;
-                text-align: center;
-                border: 5px solid black;
-                margin-top: 0.3%;
-                background-color: black;
-                width: 110% ;
-                background-color: black; }
-            
-                #menua {
-                    text-align: center;
-                    font-size: 1.5vw;
-                    font-weight: bolder;
-                    letter-spacing: 1px;
-                     padding: -1.5%;
-                     background-color: black;
-                    color: white;
-                    margin-left: 1%;
-                background-color: black;
-                margin-top: -20px;
-             }
-            .navbar-toggle{
-                background-color: black;
-            }
-                    }
-@media  (max-width: 700px){
+  
 
-    .navbar-toggler[_ngcontent-nbs-c185]:not(:disabled):not(.disabled) {
-        cursor: pointer;
-        display: block;
-        margin-left: -200px;
-    }
-
-    .navbar-nav[_ngcontent-nmu-c185] .nav-link[_ngcontent-nmu-c185] {
-        padding-right: 0;
-        padding-left: 0;
-        font-size: 20px;
-    }
-
-    button {
-        display: block;
-        color: white;
-        background-color: black;
-        margin-top: 5%;
-        margin-left: 80%;
-    }  
-                #menua {
-                    text-align: center;
-                    font-size: 4.7vw;
-                    font-weight: bolder;
-                    letter-spacing: 1px;
-                     padding: -1.5%;
-                    color: white;
-                    position: absolute;
-                    z-index: 2000;
-                    margin-left: 20px;
-                    margin-top: -10px;
-                    width: 300px;
-                }
-                    span {
-                        font-size: 4.5vw;
-                        letter-spacing: 0.5vw;
-                        color: white;
-                    }
-                    span:hover {
-                        color: red;
-                    }
-               a {
-                    font-size: 4.8vw;
-                }
-            
-}
 
 @media  (max-width: 650px){
 
@@ -246,10 +172,9 @@ li {
     font-family: "cyril";
     font-size: 16px;
     margin-left: -100px;
-    margin-top: -30px;
     opacity: 3;
     z-index: 2000;
-    position: absolute;
+    background-color: white;
 }
  
     button[_ngcontent-voa-c185] {
@@ -259,9 +184,12 @@ li {
         margin-top: 5%;
         /* margin-left: 80%; */
     }
-    .navbar-nav[_ngcontent-nmu-c185] .nav-link[_ngcontent-nmu-c185] {
+    .navbar-nav .nav-link {
         padding-right: 0;
         padding-left: 0;
-        font-size: 20px;
+        font-size: 13px;
+        text-align: center;
     }
+ 
+    
 }
