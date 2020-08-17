@@ -1,0 +1,100 @@
+.qualite{
+    border-radius: round($number: 45);
+    margin: 50px;
+    background-color: gainsboro !important;
+    font-family: 'cyril';
+}
+
+img[_ngcontent-jgp-c74] {
+    width: 250px;
+    height: 250px;
+    padding-left: 20px;
+    margin-left: -40px;
+    padding: 25px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    padding: 25px;
+}
+
+img:hover{
+    transform: scale(1.3);
+}
+
+.mat-card {
+    transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+    display: block;
+    position: relative;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: gainsboro !important;
+    font-family: 'cyril';
+    padding: 25px;
+}
+
+.mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {
+    box-sizing: border-box;
+    font-family: 'cyril';
+    position: relative;
+    -webkit-user-select: none;
+    font-size: 16px;
+    font-weight: bolder;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    text-decoration: underline;
+}
+
+.mat-button:hover, .mat-flat-button:hover, .mat-icon-button:hover, .mat-stroked-button:hover {
+    color: red;;
+}
+
+.accordeon{
+    background-color: gainsboro !important;
+    font-family: 'cyril';
+}
+
+.mat-card-actions {
+    margin-top: -50px;
+    font-family: cyril !important;
+    margin-right: -8px;
+    padding: 8px 0;
+}
+
+p{
+    font-family: 'cyril';
+    font-size: 16px;
+    letter-spacing: 0.4vw;
+    color: black;
+    font-weight: bolder;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+  }
+
+  @media (max-width:840px) {
+    .mat-card-actions {
+        margin-left: 30px;
+        font-family: cyril !important;
+        margin-right: -8px;
+        padding: 8px 0;
+    }
+  }

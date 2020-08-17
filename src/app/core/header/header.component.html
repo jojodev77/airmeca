@@ -1,0 +1,50 @@
+<div style=" background-color: gainsboro;">
+  <mat-toolbar >
+    <span>AIR-MECA
+      <img src="assets/logo.png" id="logo">
+    </span>
+
+    <span class="example-spacer"></span>
+
+    <div fxShow="true" fxHide.lt-md="true" class="lien">
+      <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+      <a (click)="scrollTo('.activite')" mat-button>Secteur activité</a>
+      <a (click)="scrollTo('.matiere')" mat-button>Matières usinées</a>
+      <a (click)="scrollTo('.qualite')" mat-button>Service qualité</a>
+      <a (click)="scrollTo('.equipement')" mat-button>Equipement</a>
+      <a (click)="scrollTo('.contact')" mat-button>Contact</a>
+    </div>
+
+    <div fxShow="true" fxHide.gt-sm="true">
+      <a href="#" (click)="sidenav.toggle()"><mat-icon>line_weight</mat-icon></a>
+    </div>
+  </mat-toolbar>
+
+  <mat-sidenav-container fxFlexFill class="example-container">
+    <mat-sidenav #sidenav fxLayout="column">
+      <div fxLayout="column">
+        <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
+        <a (click)="scrollTo('.activite')" mat-button>Secteur activité</a>
+        <a (click)="scrollTo('.matiere')" mat-button>Matières usinées</a>
+        <a (click)="scrollTo('.qualite')" mat-button>Service qualité</a>
+        <a (click)="scrollTo('.equipement')" mat-button>Equipement</a>
+        <a (click)="scrollTo('.contact')" mat-button>Contact</a>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill >
+
+      <span class="titre" fxLayoutAlign="center center"> Mécanique de précision</span>
+     
+     
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+<div class="color">
+  
+<app-diapo fxLayoutAlign="center center"></app-diapo>
+<app-activite class="activite"></app-activite>
+<app-matiere class="matiere"></app-matiere>
+<app-qualite class="qualite"></app-qualite>
+<app-equipement class="equipement"></app-equipement>
+<app-contact class="contact"></app-contact>
+</div>

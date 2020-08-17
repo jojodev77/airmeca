@@ -1,0 +1,94 @@
+<section fxLayout="row" fxLayoutAlign="space-evenly center">
+    <span>NOS EQUIPEMENTS:</span>
+</section>
+
+
+<section fxLayout.md="row" fxLayout.lg="row" fxLayout.xs="column" fxLayoutAlign="space-around center">
+    <section class="example-section">
+        <mat-slide-toggle class="example-margin" [checked]="checked" color="primary"
+            (change)="manageEquipementVisibility($event, 'cu')">
+            Centre usinages
+        </mat-slide-toggle>
+    </section>
+    <section class="example-section">
+        <mat-slide-toggle class="example-margin" [checked]="checked" color="primary"
+            (change)="manageEquipementVisibility($event, 'tcn')">
+            Tours-CN
+        </mat-slide-toggle>
+    </section>
+    <section class="example-section">
+        <mat-slide-toggle class="example-margin" [checked]="checked" color="primary"
+            (change)="manageEquipementVisibility($event, 'tt')">
+            Tour traditionnel
+        </mat-slide-toggle>
+    </section>
+    <section class="example-section">
+        <mat-slide-toggle class="example-margin" [checked]="checked" color="primary"
+            (change)="manageEquipementVisibility($event, 'ms')">
+            Machine spéciale
+        </mat-slide-toggle>
+    </section>
+    <section class="example-section">
+        <mat-slide-toggle class="example-margin" [checked]="checked" color="primary"
+            (change)="manageEquipementVisibility($event, 'i')">
+            Informatique
+        </mat-slide-toggle>
+    </section>
+
+
+</section>
+<section fxLayout="column">
+    <section fxLayout.md="row" fxLayout.lg="row" fxLayout.xs="column">
+
+        <!-- centre usinage-->
+        <section fxLayout="column" *ngIf="visibilityCu" class="equipementRubrique mat-elevation-z8">
+            <span class="titre"> Centre d'usinage</span>
+            <span class="titre">nombre: 13</span>
+
+            <ul *ngFor="let cu of centreUsinage">
+                <li>{{cu.value}}</li>
+            </ul>
+        </section>
+
+        <!-- Tous CN-->
+        <section fxLayout="column" *ngIf="visibilityTCN" class="equipementRubrique mat-elevation-z8">
+            <span class="titre"> Tour-CN</span>
+            <span class="titre">nombre: 7</span>
+
+            <ul *ngFor="let cu of toursCN">
+                <li>{{cu.value}}</li>
+            </ul>
+        </section>
+
+        <!-- Tous tradionnel-->
+        <section fxLayout="column" *ngIf="visibilityTT" class="equipementRubrique mat-elevation-z8">
+            <span class="titre"> Tours et fraiseuse tradionnel</span>
+            <span class="titre">nombre: 6</span>
+            Type:
+            <ul *ngFor="let cu of tourTraditionnel">
+                <li>{{cu.value}}</li>
+            </ul>
+        </section>
+
+    </section>
+    <section fxLayout="row">
+
+        <!-- Machine spécale-->
+        <section fxLayout="column" *ngIf="visibilityMS" class="equipementRubrique mat-elevation-z8">
+            <span class="titre"> Machines spéciales</span>
+
+            <ul *ngFor="let cu of machineSpeciale">
+                <li>{{cu.value}}</li>
+            </ul>
+        </section>
+
+        <!-- Informatique-->
+        <section fxLayout="column" *ngIf="visibilityI" class="equipementRubrique mat-elevation-z8">
+            <span class="titre"> Informatique</span>
+
+            <ul *ngFor="let cu of informatique">
+                <li>{{cu.value}}</li>
+            </ul>
+        </section>
+
+    </section>

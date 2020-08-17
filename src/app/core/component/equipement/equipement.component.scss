@@ -1,0 +1,124 @@
+.equipement {
+    border-radius: round($number: 45);
+    margin: 50px;
+    background-color: #3f87a6 !important;
+    font-family: 'cyril';
+    }
+    
+    .accordeon{
+      background-color: #3f87a6 !important;
+      font-family: 'cyril';
+    }
+    
+    .mat-expansion-panel-header:not([aria-disabled=true]) {
+      cursor: pointer;
+      background-color: #3f87a6 !important;
+    }
+    
+    .mat-expansion-panel {
+      background-color: #3f87a6 !important;
+      color:white;
+    }
+    
+    img{
+      padding: 30px;
+    }
+    
+    .img-titre{
+      width: 200px;
+      height: 200px;
+    }
+  
+    mat-card{
+      border-radius: 10px;
+      padding: 35px !important;
+      margin: 25px;
+      -webkit-animation: masuperanimation 6s; /* Safari, Opera, Chrome */
+      animation: masuperanimation 6s; /* Tous les autres navigateurs */
+      margin-left: -150px;
+      background-color: #E6E6E6;
+      font-family: 'cyril';
+      border-radius: 10px;
+    }
+  
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: black;
+      font-family: 'cyril';
+  }
+    
+    :host {
+      display: block;
+    }
+    
+    .open-close-container {
+      border: 1px solid #dddddd;
+      margin-top: 1em;
+      padding: 20px 20px 0px 20px;
+      color: #000000;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  
+    @-webkit-keyframes masuperanimation { /* Safari, Opera, Chrome */
+      0% {
+          transform: translateX(0px);
+      }
+  
+      50% {
+          transform: translateX(150px);
+      }
+  
+      100% {
+          transform: translateX(150px) rotate(30deg);
+      }
+  }
+  
+  @keyframes masuperanimation { /* Tous les autres navigateurs */
+      0% {
+          transform: translateX(0px);
+      }
+  
+      50% {
+          transform: translateX(150px);
+      }
+  
+      100% {
+          transform: translateX(200px);
+      }
+  }
+    
+    .equipementRubrique{
+      background-color: white;
+      text-align: center;
+      font-family: 'cyril';
+      font-size: 16px;
+      width: 450px;
+     margin: 40px;
+     color: black;
+     border-radius: 10px;
+    }
+  
+    .titre{
+      font-family: 'cyril';
+      font-size: 18px;
+      font-weight: bold;
+      margin: 20px;
+    }
+  
+    @media (max-width:840px) {
+      .equipementRubrique{
+        background-color: white;
+        text-align: center;
+        font-family: 'cyril';
+        font-size: 16px;
+        width: 450px;
+   margin-left: -30px;
+       color: black;
+      }
+  
+      .example-section{
+        margin-left: 20px;
+      }
+    }

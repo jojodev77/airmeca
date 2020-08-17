@@ -1,0 +1,42 @@
+.matiere {
+    border-radius: round($number: 45);
+    margin: 50px;
+    background-color: gainsboro !important;
+    font-family: 'cyril';
+  }
+  
+  .accordeon{
+    background-color: gainsboro !important;
+    font-family: 'cyril';
+  }
+  
+  .mat-expansion-panel-header:not([aria-disabled=true]) {
+    cursor: pointer;
+    background-color: #3f87a6 !important;
+  }
+  
+  .mat-expansion-panel {
+    background-color: #3f87a6 !important;
+    color:white;
+    background-color: #87CEFA;
+  }
+  
+  li {
+    padding: 35px;
+    font-size: 16px;
+    letter-spacing: 0.4em;
+    font-weight: bold;
+    font-family: 'cyril';
+    color: black;
+  }
+  
+  li:hover{
+    color: black;
+    font-size: 18px;
+  }
+  
+  button, input {
+    overflow: visible;
+    border-radius: 10px;
+    text-align: center;
+  }

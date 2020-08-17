@@ -1,0 +1,30 @@
+<section fxLayout="column" class="qualite mat-elevation-z4" fxLayoutAlign="center center">
+                   SERVICE QUALITE:
+      <mat-card class="example-card">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title fxLayoutAlign="center center"></mat-card-title>
+                </mat-card-header>
+                <mat-card-actions fxLayout="row" fxLayoutAlign="start center">
+                    <button mat-button (click)="elementViews('machine')">NOS EQUIPEMENTS</button>
+                    <button mat-button (click)="elementViews('certification')">NOS CERTIFICATIONS</button>
+                </mat-card-actions>
+                <section *ngIf="machine" >
+                    <section fxLayout.md="row" fxLayout.lg="row" fxLayout.xs="column" fxLayoutAlign="center center" *ngIf="machine" >
+                        <img src="assets/mq.jpg">
+                        <img src="assets/mq1.jpg">
+                        <section>
+                            <p>• Le service qualité est un secteur majeur, un contrôle accru des pièces en cour d’usinage jusqu’à la livraison.<p>
+                        </section>
+                    </section>
+                </section>
+                <section fxLayout="column" fxLayoutAlign="start center" *ngIf="certification" >
+                    <section fxLayout.md="row" fxLayout.lg="row" fxLayout.xs="column" fxLayoutAlign="start center" *ngIf="certification">
+                        <img src="assets/iso.png">
+                        <section>
+                            <p>• AIRMECA est une société spécialisée dans l’usinage de précision et est certifiée EN9100 (depuis 2013)<p>
+                        </section>
+                    </section>
+               
+        </section>
+    
