@@ -1,8 +1,6 @@
-<div style=" background-color: gainsboro;">
+<div style=" background-color: gainsboro">
   <mat-toolbar >
-    <span>AIR-MECA
-      <img src="assets/logo.png" id="logo">
-    </span>
+
 
     <span class="example-spacer"></span>
 
@@ -15,9 +13,16 @@
       <a (click)="scrollTo('.contact')" mat-button>Contact</a>
     </div>
 
-    <div fxShow="true" fxHide.gt-sm="true">
+    <div fxShow="true" fxHide.gt-sm="true" fxLayoutAlign="start center">
       <a href="#" (click)="sidenav.toggle()"><mat-icon>line_weight</mat-icon></a>
     </div>
+
+    <section fxLayout="row" fxLayoutAlign="space-around center">
+    <span fxLayoutAlign="end center" class="titrePrincipal">
+      SAS-VALET
+    </span>
+    <img src="assets/iso.png" id="logo"> 
+    </section>
   </mat-toolbar>
 
   <mat-sidenav-container fxFlexFill class="example-container">
@@ -39,12 +44,14 @@
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
-<div class="color">
+<div class="color" fxLayout="column" fxLayoutAlign="space-around center" >
   
+  <section fxLayoutAlign="center center">
 <app-diapo fxLayoutAlign="center center"></app-diapo>
-<app-activite class="activite"></app-activite>
-<app-matiere class="matiere"></app-matiere>
-<app-qualite class="qualite"></app-qualite>
-<app-equipement class="equipement"></app-equipement>
-<app-contact class="contact"></app-contact>
+</section>
+<app-activite fxLayoutAlign="center center" class="activite"></app-activite>
+<app-matiere fxLayoutAlign="center center" class="matiere"></app-matiere>
+<app-qualite class="qualite" fxLayoutAlign="center center"></app-qualite>
+<app-equipement class="equipement"  fxLayoutAlign="center center"></app-equipement>
+<app-contact class="contact" fxLayoutAlign="center center"></app-contact>
 </div>

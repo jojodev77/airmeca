@@ -1,10 +1,11 @@
-<section fxLayout="row" fxLayoutAlign="space-evenly center">
-    <span>NOS EQUIPEMENTS:</span>
+<section  fxLayout="column" class="equip mat-elevation-z4">
+<section fxLayout="row"  fxLayoutAlign="center center">
+    <span class="title">NOS EQUIPEMENTS:</span>
 </section>
 
 
-<section fxLayout.md="row" fxLayout.lg="row" fxLayout.xs="column" fxLayoutAlign="space-around center">
-    <section class="example-section">
+<section fxLayout.md="row" fxLayout.lg="row" fxLayout.xs="column" fxLayoutAlign="center center">
+    <section class="example-section" >
         <mat-slide-toggle class="example-margin" [checked]="checked" color="primary"
             (change)="manageEquipementVisibility($event, 'cu')">
             Centre usinages
@@ -41,7 +42,7 @@
     <section fxLayout.md="row" fxLayout.lg="row" fxLayout.xs="column">
 
         <!-- centre usinage-->
-        <section fxLayout="column" *ngIf="visibilityCu" class="equipementRubrique mat-elevation-z8">
+        <section fxLayout="column" *ngIf="visibilityCu" class="equipementRubrique mat-elevation-z4">
             <span class="titre"> Centre d'usinage</span>
             <span class="titre">nombre: 13</span>
 
@@ -71,7 +72,7 @@
         </section>
 
     </section>
-    <section fxLayout="row">
+    <section fxLayout.md="row" fxLayout.lg="row" fxLayout.xs="column">
 
         <!-- Machine spécale-->
         <section fxLayout="column" *ngIf="visibilityMS" class="equipementRubrique mat-elevation-z8">
@@ -91,4 +92,5 @@
             </ul>
         </section>
 
+    </section>
     </section>

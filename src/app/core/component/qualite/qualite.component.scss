@@ -1,6 +1,7 @@
 .qualite{
     border-radius: round($number: 45);
     margin: 50px;
+    width: 85%;
     background-color: gainsboro !important;
     font-family: 'cyril';
 }
@@ -87,7 +88,6 @@ p{
     padding-top: 5px;
     text-align: center;
     border-radius: 10px;
-    width: 80%;
   }
 
   @media (max-width:840px) {
@@ -96,5 +96,35 @@ p{
         font-family: cyril !important;
         margin-right: -8px;
         padding: 8px 0;
+    }
+
+    .qualite{
+        border-radius: round($number: 45);
+        margin: 50px;
+        width: 85%;
+        background-color: gainsboro !important;
+        font-family: 'cyril';
+    }
+  }
+
+  @media (max-width:640px) {
+    .mat-card-actions {
+        margin-left: 30px;
+        font-family: cyril !important;
+        margin-right: -8px;
+        padding: 8px 0;
+    }
+
+    .qualite{
+        border-radius: round($number: 45);
+        margin: 50px;
+        width: 85%;
+        background-color: gainsboro !important;
+        font-family: 'cyril';
+        margin-left: 50px;
+    }
+
+    p {
+        max-width: 300px;
     }
   }

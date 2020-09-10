@@ -1,12 +1,11 @@
-<section class="matiere mat-elevation-z4" fxLayout="column">
-            <section fxLayout="row" fxLayoutAlign="center center">
+<section class="matiere mat-elevation-z4" fxLayout="column" fxLayoutAlign="center center">
+            <section fxLayout="row" fxLayoutAlign="center center" class="titre">
                 LES MATIERES USINNEES
             </section>
-               <input [ngModel]="searchText" name="searchText"
-               (ngModelChange)="setUppercaseName($event)" placeHolder="Rechercher">
-
+              
+            <section fxLayout="column" fxLayoutAlign="center center">
               <ul *ngFor="let item of matiereArray | filter : searchText">
                 <li>{{item}}</li>
-               
               </ul>
+            </section>
           </section>

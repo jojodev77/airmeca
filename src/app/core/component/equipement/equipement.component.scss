@@ -1,8 +1,17 @@
 .equipement {
     border-radius: round($number: 45);
     margin: 50px;
+    padding: 25px;
     background-color: #3f87a6 !important;
     font-family: 'cyril';
+    }
+
+    .equip{
+ max-width: 900px;
+    }
+
+    .title{
+      padding: 20px;
     }
     
     .accordeon{
@@ -31,8 +40,9 @@
   
     mat-card{
       border-radius: 10px;
-      padding: 35px !important;
-      margin: 25px;
+      text-align: center !important;
+      padding: 15px !important;
+      margin: 15px;
       -webkit-animation: masuperanimation 6s; /* Safari, Opera, Chrome */
       animation: masuperanimation 6s; /* Tous les autres navigateurs */
       margin-left: -150px;
@@ -46,6 +56,10 @@
       margin-bottom: 1rem;
       color: black;
       font-family: 'cyril';
+  }
+
+  span{
+    text-align: center;
   }
     
     :host {
@@ -91,7 +105,7 @@
     
     .equipementRubrique{
       background-color: white;
-      text-align: center;
+      text-align: center !important;
       font-family: 'cyril';
       font-size: 16px;
       width: 450px;
@@ -114,7 +128,6 @@
         font-family: 'cyril';
         font-size: 16px;
         width: 450px;
-   margin-left: -30px;
        color: black;
       }
   

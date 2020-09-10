@@ -1,8 +1,13 @@
 .matiere {
     border-radius: round($number: 45);
     margin: 50px;
+    padding: 25px;
     background-color: gainsboro !important;
     font-family: 'cyril';
+  }
+
+  .titre{
+    padding: 20px;
   }
   
   .accordeon{
@@ -22,7 +27,6 @@
   }
   
   li {
-    padding: 35px;
     font-size: 16px;
     letter-spacing: 0.4em;
     font-weight: bold;

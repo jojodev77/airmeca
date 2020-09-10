@@ -38,10 +38,14 @@ a {
     background-color: gainsboro !important;
 }
 
+.titrePrincipal{
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
 .titre{
 text-align: center;
 letter-spacing: 0.3em;
-text-decoration: underline;
 font-size: 3vw;
 padding: 10px;
 }
@@ -50,6 +54,11 @@ padding: 10px;
     padding: 75px;
 }
 #logo{
-    max-height: 95px;
-    max-width: 70px;
+    max-height: 277px;
+    max-width: 114px;
+    margin-left: 30px;
+}
+
+a{
+    font-family: 'cyril' !important;
 }

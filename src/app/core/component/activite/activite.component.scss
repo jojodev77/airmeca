@@ -1,8 +1,8 @@
 .client {
     border-radius: round($number: 45);
-    margin: 50px;
     background-color: gainsboro !important;
     font-family: 'cyril';
+    padding: 25px;
   }
   
   .img-titre{
@@ -19,7 +19,6 @@
     padding-top: 5px;
     text-align: center;
     border-radius: 10px;
-    width: 80%;
   }
   
   img{
@@ -34,4 +33,19 @@
   
   .contenu{
     background-color: gainsboro !important;
+  }
+
+  @media (max-width:840px) {
+
+    .client {
+      border-radius: round($number: 45);
+      background-color: gainsboro !important;
+      font-family: 'cyril';
+      padding: 25px;
+     text-align: center !important;
+    }
+p{
+  padding: 25px;
+  text-align: center;
+}
   }
